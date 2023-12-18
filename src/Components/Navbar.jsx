@@ -18,18 +18,28 @@ const Navbar = () => {
             </div>
             <div className="menu-btn md:hidden flex items-center justify-between duration-1000 ">
               {menu ? (
-                <p onClick={handleMenu} className="text-teal-500 text-4xl duration-1000 ">
+                <p
+                  onClick={handleMenu}
+                  className="text-teal-500 text-4xl duration-1000 "
+                >
                   <RxCross2></RxCross2>
                 </p>
               ) : (
-                <p onClick={handleMenu} className="text-teal-500 text-4xl duration-1000 ">
+                <p
+                  onClick={handleMenu}
+                  className="text-teal-500 text-4xl duration-1000 "
+                >
                   <IoMenuOutline></IoMenuOutline>
                 </p>
               )}
             </div>
           </div>
           <div className="nav-center">
-            <ul className={`flex flex-col md:flex-row items-center justify-center absolute md:static  ${menu ? "top-[3.4rem]" : "-top-48" } bg-[#0f0f0f] rounded-md duration-500 py-4 px-3 z-10 `}>
+            <ul
+              className={`flex flex-col md:flex-row items-center justify-center absolute md:static  ${
+                menu ? "top-[3.4rem]" : "-top-48"
+              } bg-[#0f0f0f] rounded-md duration-500 py-4 px-3 z-10 `}
+            >
               <li>
                 <NavLink
                   to={"/"}
@@ -68,7 +78,7 @@ const Navbar = () => {
             <button>
               <Link
                 to={"/contact"}
-                className="border-2 font-semibold border-transparent px-5 py-1.5 rounded-md text-gray-100 bg-teal-500 hover:text-teal-500 hover:bg-transparent hover:border-teal-500 duration-700  "
+                className="border-[.09rem] font-semibold border-transparent px-5 py-1.5 rounded-md text-gray-100 bg-teal-500 hover:text-gray-500  hover:bg-transparent hover:border-gray-500 duration-700  "
               >{`Let's talk`}</Link>
             </button>
           </div>
