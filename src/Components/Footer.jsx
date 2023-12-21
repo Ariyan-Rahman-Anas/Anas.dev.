@@ -9,7 +9,7 @@ const Footer = () => {
             <img src={Logo} alt="" className="w-full" />
           </div>
           <div className="nav-center">
-            <ul className="flex flex-col md:flex-row items-center justify-center text-gray-500 bg-[#0f0f0f] rounded-md duration-500 py-4 px-3 z-10">
+            <ul className="grid grid-cols-2 md:grid-cols-4 gap-2 text-gray-500 bg-[#0f0f0f] rounded-md duration-500 py-4 px-3 z-10">
               <li>
                 <NavLink
                   to={"/"}
@@ -28,7 +28,7 @@ const Footer = () => {
               </li>
               <li>
                 <NavLink
-                  to={"/project"}
+                  to={"/projects"}
                   className=" px-5 py-1  hover:text-gray-100 focus:text-gray-100 duration-500"
                 >
                   Project

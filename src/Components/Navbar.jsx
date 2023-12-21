@@ -11,11 +11,13 @@ const Navbar = () => {
   }
     return (
       <div>
-        <nav className="flex flex-col md:flex-row md:items-center justify-between text-gray-500 bg-[#0f0f0f] px-2 lg:px-8 py-2 ">
+        <nav className="flex flex-col md:flex-row md:items-center justify-between text-gray-500 bg-[#0f0f0f]  py-2 ">
           <div className="nav-left flex items-center justify-between w-full md:w-fit z-50 ">
-            <div className="logo w-[12rem] ">
-              <img src={Logo} alt="the developer's logo" className="w-full" />
-            </div>
+            <Link to={"/"}>
+              <div className="logo w-[12rem] ">
+                <img src={Logo} alt="the developer's logo" className="w-full" />
+              </div>
+            </Link>
             <div className="menu-btn md:hidden flex items-center justify-between duration-1000 ">
               {menu ? (
                 <p
@@ -58,7 +60,7 @@ const Navbar = () => {
               </li>
               <li>
                 <NavLink
-                  to={"/project"}
+                  to={"/projects"}
                   className=" px-5 py-1  hover:text-gray-100 focus:text-gray-100 duration-500"
                 >
                   Project
@@ -78,7 +80,7 @@ const Navbar = () => {
             <button>
               <Link
                 to={"/contact"}
-                className="border-[.09rem] font-semibold border-transparent px-5 py-1.5 rounded-md text-gray-100 bg-teal-500 hover:text-gray-500  hover:bg-transparent hover:border-gray-500 duration-700  "
+                className="py-2 px-4 text-gray-100 bg-gradient-to-t from-teal-600 to-gray-800 rounded-md flex flex-col items-center justify-center  hover:transform hover:scale-110 duration-500"
               >{`Let's talk`}</Link>
             </button>
           </div>
