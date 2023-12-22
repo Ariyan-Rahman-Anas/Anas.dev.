@@ -106,9 +106,7 @@ const About = () => {
                 <p className="font-semibold text-gray-100 ">
                   : Bengali, English, Urdu and Hindi
                 </p>
-                <p className="font-semibold text-gray-100 ">
-                  : Bangladeshi
-                </p>
+                <p className="font-semibold text-gray-100 ">: Bangladeshi</p>
               </div>
             </div>
           </div>
@@ -119,17 +117,29 @@ const About = () => {
                 boxShadow: "1px 1px 3px #042f2e,-1px -1px 3px #042f2e ",
               }}
             >
-              <a href="">
+              <a
+                href="https://www.facebook.com/ariyanrahmananas69/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500  ">
                   <FaFacebookF></FaFacebookF>
                 </p>
               </a>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/ariyanrahmananas/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500">
                   <FaLinkedinIn></FaLinkedinIn>
                 </p>
               </a>
-              <a href="">
+              <a
+                href="https://github.com/Ariyan-Rahman-Anas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500">
                   <LuGithub></LuGithub>
                 </p>

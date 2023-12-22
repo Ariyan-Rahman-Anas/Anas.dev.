@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 import {IoCameraOutline,IoColorFilterOutline,} from "react-icons/io5";
 import { PiPencilCircle } from "react-icons/pi";
 import { LiaDev } from "react-icons/lia";
-import { FiTwitter } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { LuFileDown } from "react-icons/lu";
 import myResume from "./../../assets/Ariyan-Rahman-Anas-Resume.pdf"
@@ -211,7 +211,7 @@ const Home = () => {
               }}
             >
               <p className=" bg-teal-900 p-5 rounded-full hover:bg-teal-500 duration-500  ">
-                <FiTwitter></FiTwitter>
+                <FaLinkedinIn></FaLinkedinIn>
               </p>
               <p className=" bg-teal-900 p-5 rounded-full hover:bg-teal-500 duration-500  ">
                 <FaDribbble></FaDribbble>
