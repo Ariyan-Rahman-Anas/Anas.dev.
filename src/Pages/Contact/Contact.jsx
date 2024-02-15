@@ -3,10 +3,9 @@ import { MdOutlineCall } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { FiTwitter } from "react-icons/fi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import arrow from "./../../assets/arrow.png"
+import arrow from "./../../assets/arrow.png";
 import emailjs from "@emailjs/browser";
-import { useRef, useState } from "react";
-
+import { useEffect, useRef, useState } from "react";
 import {
   Button,
   Dialog,
@@ -18,14 +17,31 @@ import {
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const handleOpen = () => setOpen(!open);
+
+  // Function to clear form data
+  const clearForm = () => {
+    setName("");
+    setEmail("");
+    setSubject("");
+    setMessage("");
+  };
+
+  // Check if open is true, then clear form
+  useEffect(() => {
+    if (open) {
+      clearForm();
+    }
+  }, [open]);
 
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-    // const form = e.target.value
-
     emailjs
       .sendForm(
         "service_jd5nmtr",
@@ -42,15 +58,6 @@ const Contact = () => {
         }
       );
   };
-
-  // const [open, setOpen] = useState(false);
-
-  // const handleOpen = () => {
-  //   if (form.target.from_email != "") {
-  //     setOpen(!open);
-  //     form.reset()
-  //   }
-  // };
 
   return (
     <div className="mt-20">
@@ -170,13 +177,18 @@ const Contact = () => {
               <input
                 type="text"
                 name="from_name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                 placeholder="Name *"
               />
 
               <input
                 type="email"
-                name="from_email" required
+                name="from_email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
                 className="p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                 placeholder="Email *"
               />
@@ -184,15 +196,20 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
+                value={subject}
+                onChange={(e) => setSubject(e.target.value)}
                 className="p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                 placeholder="Your Subject *"
               />
 
               <textarea
                 name="message"
-                placeholder="Your Message *" required
+                placeholder="Your Message *"
+                required
                 cols="30"
                 rows="4"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 className="w-full p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600"
               ></textarea>
 
@@ -200,7 +217,7 @@ const Contact = () => {
                 onClick={handleOpen}
                 type="submit"
                 value="Send Message"
-                className="w-full p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600"
+                className="w-full p-3 rounded-lg bg-gradient-to-l from-teal-700 to-gray-900 hover:to-gray-700 focus:outline-none cursor-pointer "
               />
               <div className="bg-red-">
                 <Dialog
