@@ -18,12 +18,15 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import "./about.css";
-import myResume from "./../../assets/Ariyan-Rahman-Anas-Resume.pdf"
+import myResume from "./../../assets/Ariyan-Rahman-Anas-Resume.pdf";
 
 const About = () => {
   return (
     <div>
-      <section className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-8">
+      <section
+        id="media-and-top-info"
+        className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-8"
+      >
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
@@ -57,18 +60,21 @@ const About = () => {
         </div>
       </section>
 
-      <section className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-500">
+      <section
+        id="personal-and-educational"
+        className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-500"
+      >
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           data-aos-anchor-placement="center-bottom"
-          className="left text-xs  p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
+          className="left text-xs 2xl:text-base px-2 py-5 md:p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
         >
           <h1 className="text-3xl font-semibold mb-6  ">
             Personal Information
           </h1>
-          <div className="flex flex-col md:flex-row items-start justify-between gap- rounded-lg p-4 bg-gradient-to-l from-teal-950 hover:bg-gradient-to-r hover:from-teal-950 to-gray-900 hover:to-gray-950 duration-500">
+          <div className="flex flex-col md:flex-row items-start justify-between gap-2 rounded-lg p-4 bg-gradient-to-l from-teal-950 hover:bg-gradient-to-r hover:from-teal-950 to-gray-900 hover:to-gray-950 duration-500">
             <div className="left flex gap-1 ">
               <div className="title flex flex-col gap-2 ">
                 <p>First Name</p>
@@ -83,7 +89,7 @@ const About = () => {
                 <p className="font-semibold text-gray-100 ">
                   : +88 01610-195968
                 </p>
-                <p className="font-semibold text-gray-100 ">: mr.anas</p>{" "}
+                <p className="font-semibold text-gray-100 ">: mr.anas</p>
                 <p className="font-semibold text-gray-100 ">
                   : Chattogram, Bangladesh
                 </p>
@@ -169,7 +175,7 @@ const About = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           data-aos-anchor-placement="center-bottom"
-          className="right p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
+          className="right text-xs 2xl:text-base px-2 py-5 md:p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
         >
           <h1 className="text-3xl font-semibold mb-5 ">
             Educational Qualifications
@@ -177,58 +183,58 @@ const About = () => {
           <div className="flex flex-col gap-5">
             <div className="diploma flex flex-col items-start justify-start gap-1 rounded-lg p-4 bg-gradient-to-l from-teal-950 to-gray-900 hover:bg-gradient-to-r hover:from-teal-950 hover:to-gray-950 duration-500">
               <div>
-                <h1 className="text-gray-100 font-light text-xl ">
+                <h1 className="text-gray-100 font-light text-xl border-b-[.09rem] mb-3 ">
                   Diploma in Engineering
                 </h1>
               </div>
               <div>
-                <p>
-                  Department :{" "}
-                  <span className="font-semibold text-gray-100">
-                    Computer Science and Technology
-                  </span>
-                </p>
-                <p>
-                  Institute :{" "}
-                  <span className="font-semibold text-gray-100">
-                    Chattogram Polytechnic Institute
-                  </span>
-                </p>
-                <p>
-                  Duration :{" "}
-                  <span className="font-semibold text-gray-100">
-                    4 Years-8 Semester
-                  </span>
-                </p>
-                <p>
-                  Year of Pass :{" "}
-                  <span className="font-semibold text-gray-100">2023</span>
-                </p>
+                <div className="flex gap-x-5">
+                  <div className="key flex flex-col gap-2 ">
+                    <p>Department</p>
+                    <p>Institute</p>
+                    <p>Duration</p>
+                    <p>Year of Pass</p>
+                  </div>
+                  <div className="value flex flex-col gap-2">
+                    <p className="font-semibold text-gray-100">
+                      : Computer Science and Technology
+                    </p>
+                    <p className="font-semibold text-gray-100">
+                      : Chattogram Polytechnic Institute
+                    </p>
+                    <p className="font-semibold text-gray-100">
+                      : 4 Years, 8 Semester
+                    </p>
+                    <p className="font-semibold text-gray-100">
+                      : 2023
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="dakhil flex-col flex items-start justify-start gap-1 rounded-lg p-4 bg-gradient-to-l from-teal-950 hover:bg-gradient-to-r hover:from-teal-950 to-gray-900 hover:to-gray-950 duration-500">
               <div>
-                <h1 className="text-gray-100 font-light text-xl ">
-                  Dakhil (S.S.C.)
+                <h1 className="text-gray-100 font-light text-xl border-b-[.09rem] mb-3 ">
+                  Secondary School Certificate (SSC)
                 </h1>
               </div>
               <div>
-                <p>
-                  Institute :{" "}
-                  <span className="font-semibold text-gray-100">
-                    Baitush Sharaf Ideal kamil (M.A) Madrasah
-                  </span>
-                </p>
-                <p>
-                  Duration :{" "}
-                  <span className="font-semibold text-gray-100">
-                    2 Years-4 Semester
-                  </span>
-                </p>
-                <p>
-                  Year of Pass :{" "}
-                  <span className="font-semibold text-gray-100">2019</span>
-                </p>
+                <div className="flex gap-x-2 ">
+                  <div className="key flex flex-col gap-2 ">
+                    <p>Institute</p>
+                    <p>Duration</p>
+                    <p>Year of Pass</p>
+                  </div>
+                  <div className="value flex flex-col gap-2 ">
+                    <p className="font-semibold text-gray-100">
+                      : Baitush Sharaf Ideal kamil (M.A) Madrasah
+                    </p>
+                    <p className="font-semibold text-gray-100">
+                      : 2 Years-4 Semester
+                    </p>
+                    <span className="font-semibold text-gray-100">: 2019</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -236,6 +242,7 @@ const About = () => {
       </section>
 
       <section
+        id="skills"
         data-aos="zoom-in-up"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"

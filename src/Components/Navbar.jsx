@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
         <div className="nav-center  ">
           <ul
-            className={`flex flex-col md:flex-row items-center justify-start gap-5 absolute md:static  ${
+            className={`flex flex-col md:flex-row items-center justify-start gap-5 md:gap-8 absolute md:static  ${
               menu ? "left-0 pt-[4rem] w-[70vw] h-[100vh] " : "-left-[35rem]"
             } bg-[#0f0f0f] text-gray-400 rounded-md duration-1000 z-10 `}
           >
