@@ -36,42 +36,34 @@ const Navbar = () => {
             )}
           </div>
         </div>
-        <div className="nav-center">
+        <div className="nav-center  ">
           <ul
-            className={`flex flex-col md:flex-row items-center justify-start gap-y-5 absolute md:static  ${
+            className={`flex flex-col md:flex-row items-center justify-start gap-5 absolute md:static  ${
               menu ? "left-0 pt-[4rem] w-[70vw] h-[100vh] " : "-left-[35rem]"
-            } text-gray-300 bg-[#0f0f0f] rounded-md duration-1000 -4 px3 z-10 `}
+            } bg-[#0f0f0f] text-gray-400 rounded-md duration-1000 z-10 `}
           >
-            <li>
-              <NavLink
-                to={"/"}
-                className=" px-5 py-1 hover:text-gray-100 focus:text-gray-100 duration-500 "
-              >
+            <li className="tex-white relative group">
+              <NavLink to={"/"} className=" group-hover:text-white">
                 Home
+                <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300 "></span>
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to={"/about"}
-                className=" px-5 py-1  hover:text-gray-100 focus:text-gray-100 duration-500"
-              >
+            <li className="tex-white relative group">
+              <NavLink to={"/about"} className=" group-hover:text-white">
                 About
+                <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300 "></span>
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to={"/projects"}
-                className=" px-5 py-1  hover:text-gray-100 focus:text-gray-100 duration-500"
-              >
-                Project
+            <li className="tex-white relative group">
+              <NavLink to={"/projects"} className=" group-hover:text-white">
+                Projects
+                <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300 "></span>
               </NavLink>
             </li>
-            <li>
-              <NavLink
-                to={"/contact"}
-                className=" px-5 py-1  hover:text-gray-100 focus:text-gray-100 duration-500"
-              >
-                Contact
+            <li className="tex-white relative group">
+              <NavLink to={"/contact"} className=" group-hover:text-white">
+                Contact me
+                <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300 "></span>
               </NavLink>
             </li>
           </ul>
@@ -88,5 +80,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;

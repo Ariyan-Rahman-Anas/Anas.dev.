@@ -1,8 +1,7 @@
 import { IoMailOutline } from "react-icons/io5";
 import { MdOutlineCall } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { FiTwitter } from "react-icons/fi";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import arrow from "./../../assets/arrow.png";
 import emailjs from "@emailjs/browser";
 import { useEffect, useRef, useState } from "react";
@@ -14,6 +13,7 @@ import {
   DialogFooter,
   Typography,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -140,15 +140,24 @@ const Contact = () => {
                     boxShadow: "1px 1px 3px #042f2e,-1px -1px 3px #042f2e ",
                   }}
                 >
-                  <p className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500 ">
-                    <FiTwitter></FiTwitter>
-                  </p>
-                  <p className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500  ">
+                  <Link
+                    to={"https://www.instagram.com/mr.ariyan.rahman.anas/"}
+                    className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500 "
+                  >
+                    <FaInstagram></FaInstagram>
+                  </Link>
+                  <Link
+                    to={"https://www.facebook.com/ariyanrahmananas69"}
+                    className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500  "
+                  >
                     <FaFacebookF></FaFacebookF>
-                  </p>
-                  <p className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500  ">
+                  </Link>
+                  <Link
+                    to={"https://www.linkedin.com/in/ariyanrahmananas/"}
+                    className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500  "
+                  >
                     <FaLinkedinIn></FaLinkedinIn>
-                  </p>
+                  </Link>
                 </div>
               </div>
             </div>
