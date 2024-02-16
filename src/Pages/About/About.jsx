@@ -1,6 +1,5 @@
 import cover from "./../../assets/myCover.jpeg";
 import arrow from "./../../assets/arrow.png";
-import { GiPolarStar } from "react-icons/gi";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { LuGithub, LuFileDown } from "react-icons/lu";
 import {
@@ -19,6 +18,7 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import "./about.css";
 import myResume from "./../../assets/Ariyan-Rahman-Anas-Resume.pdf";
+import PageTitle from "../../Components/PageTitle";
 
 const About = () => {
   return (
@@ -47,11 +47,7 @@ const About = () => {
           data-aos-anchor-placement="center-bottom"
           className="right col-span-2 flex flex-col gap-5  "
         >
-          <div className="up flex items-center justify-center gap-1 text-3xl lg:text-6xl font-semibold ">
-            <GiPolarStar className="text-teal-500 text-3xl lg:text-5xl "></GiPolarStar>
-            <h1>SELF-SUMMARY</h1>
-            <GiPolarStar className="text-teal-500 text-3xl lg:text-5xl "></GiPolarStar>
-          </div>
+          <PageTitle title={"SELF-SUMMARY"}></PageTitle>
           <div className="down px-8 pb-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg">
             <img src={arrow} alt="" />
             <h1 className="text-4xl font-semibold mt-5">Ariyan Rahman Anas</h1>
