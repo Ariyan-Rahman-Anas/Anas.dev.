@@ -5,10 +5,49 @@ import { LuGithub } from "react-icons/lu";
 import arrow from "./../../assets/arrow.png";
 import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
+import { useEffect, useState } from "react";
+import CredentialCard from "./CredentialCard";
+import loading from "./../../assets/loading.gif";
 
 const Credentials = () => {
+  const [credentials, setCredentials] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("http://localhost:5001/credentials")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch credentials");
+        }
+        return res.json();
+      })
+      .then((data) => setCredentials(data))
+      .catch((error) => setError(error.message));
+  }, []);
+
+  if (error) {
+    return (
+      <div className="flex items-center justify-center h-[90vh] text-center ">
+        <div className="w-1/ w-[5rem] ">
+          <img src={loading} alt="loader" className="w-full" />
+          <p>Loading...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!credentials) {
+    return (
+      <div className="flex items-center justify-center h-[90vh] ">
+        <div className="w-1/ w-[5rem] ">
+          <img src={loading} alt="loader" className="w-full" />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div>
+    <div className="border- h-[100rem] ">
       <div className="md:relative mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 ">
         <div className="left md:fixed  top-24 bsolute let-0  w-full col-span-2 md:col-span-1 ">
           <div
@@ -57,6 +96,14 @@ const Credentials = () => {
                 ></MySocials>
 
                 <DownloadMyResume></DownloadMyResume>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16 ">
+                {credentials.map((credential) => (
+                  <CredentialCard
+                    key={credential.id}
+                    credential={credential}
+                  ></CredentialCard>
+                ))}
               </div>
             </div>
           </div>

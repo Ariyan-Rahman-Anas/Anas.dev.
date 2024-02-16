@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Computer Science and Technology",
+    "degreeTitle": "Diploma in Engineering",
+    "institute": "Chattogram Polytechnic Institute",
+    "img": "https://i.ibb.co/0K78PxR/Diploma.jpg",
+    "description": "Completed a rigorous program at Chattogram Polytechnic Institute, specializing in Computer Science and Technology. The curriculum encompassed a wide range of subjects including software development, computer architecture, networking, and database management. Hands-on training and practical projects provided valuable experience in designing and implementing software solutions, troubleshooting technical issues, and collaborating effectively in team environments. This diploma equips me with a solid foundation in computer engineering principles and practical skills essential for success in the field."
+  },
+  {
+    "id": 2,
+    "title": "General",
+    "degreeTitle": "Secondary School Certificate (SSC)",
+    "institute": "Baitush Sharaf Ideal Kamil (M. A) Madrasah",
+    "img": "https://i.ibb.co/vzqbwNH/Dakhil.jpg",
+    "description": "Achieved Secondary School Certificate (SSC) from Baitush Sharaf Ideal Kamil (M. A) Madrasah. The program covered a broad spectrum of subjects, including mathematics, science, literature, and social studies. Throughout my schooling, I demonstrated strong academic performance and actively participated in extracurricular activities such as sports and debate competitions. This certificate marks the successful completion of my secondary education and prepares me for further academic pursuits."
+  }
+]
