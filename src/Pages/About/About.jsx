@@ -1,7 +1,7 @@
 import cover from "./../../assets/myCover.jpeg";
 import arrow from "./../../assets/arrow.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { LuGithub, LuFileDown } from "react-icons/lu";
+import { LuGithub} from "react-icons/lu";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -17,7 +17,6 @@ import { BiLogoMongodb } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
 import { SiExpress } from "react-icons/si";
 import "./about.css";
-import myResume from "./../../assets/Ariyan-Rahman-Anas-Resume.pdf";
 import PageTitle from "../../Components/PageTitle";
 import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
@@ -137,7 +136,7 @@ const About = () => {
           {/* Ariyan Rahman Anas's basic info again here for medium to large devices */}
           <div className="social-icons-resume-download hidden mt-0 md:mt-12 mb-12 md:flex flex-col md:flex-row items-center justify-between gap-5 ">
             {/* <MySocials></MySocials> */}
-            <MySocials
+            <MySocials fb={<FaFacebookF></FaFacebookF>}
               linkedin={<FaLinkedinIn></FaLinkedinIn>}
               gh={<LuGithub></LuGithub>}
             ></MySocials>

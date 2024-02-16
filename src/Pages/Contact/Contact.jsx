@@ -1,7 +1,8 @@
 import { IoMailOutline } from "react-icons/io5";
 import { MdOutlineCall } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn} from "react-icons/fa";
+import { LuGithub } from "react-icons/lu";
 import arrow from "./../../assets/arrow.png";
 import emailjs from "@emailjs/browser";
 import { useEffect, useRef, useState } from "react";
@@ -13,7 +14,7 @@ import {
   DialogFooter,
   Typography,
 } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import MySocials from "../../Components/MySocials";
 
 const Contact = () => {
   const [open, setOpen] = useState(false);
@@ -134,31 +135,11 @@ const Contact = () => {
                 data-aos-anchor-placement="center-bottom"
                 className="social"
               >
-                <div
-                  className=" flex items-center justify-center gap-10 text-xl p-4 rounded-lg bg-gradient-to-l from-teal-900 to-gray-950 hover:from-gray-950 hover:to-teal-900 duration-500 "
-                  style={{
-                    boxShadow: "1px 1px 3px #042f2e,-1px -1px 3px #042f2e ",
-                  }}
-                >
-                  <Link
-                    to={"https://www.instagram.com/mr.ariyan.rahman.anas/"}
-                    className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500 "
-                  >
-                    <FaInstagram></FaInstagram>
-                  </Link>
-                  <Link
-                    to={"https://www.facebook.com/ariyanrahmananas69"}
-                    className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500  "
-                  >
-                    <FaFacebookF></FaFacebookF>
-                  </Link>
-                  <Link
-                    to={"https://www.linkedin.com/in/ariyanrahmananas/"}
-                    className="bg-gradient-to-b from-teal-800 to-gray-950 p-4 rounded-full hover:bg-teal-500 hover:transform hover:scale-110 duration-500  "
-                  >
-                    <FaLinkedinIn></FaLinkedinIn>
-                  </Link>
-                </div>
+                <MySocials
+                  fb={<FaFacebookF></FaFacebookF>}
+                  linkedin={<FaLinkedinIn></FaLinkedinIn>}
+                  gh={<LuGithub></LuGithub>}
+                ></MySocials>
               </div>
             </div>
           </div>
