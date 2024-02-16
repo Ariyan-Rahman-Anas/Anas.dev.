@@ -9,5 +9,4 @@ const PageTitle = ({title}) => {
     </div>
   );
 };
-
 export default PageTitle;

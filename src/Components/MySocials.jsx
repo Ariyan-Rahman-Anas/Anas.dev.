@@ -13,7 +13,6 @@ const MySocials = ({fb, linkedin, gh}) => {
         >
           <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500  ">
             {fb}
-            {/* <FaFacebookF></FaFacebookF> */}
           </p>
         </a>
         <a
@@ -23,7 +22,6 @@ const MySocials = ({fb, linkedin, gh}) => {
         >
           <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500">
             {linkedin}
-            {/* <FaLinkedinIn></FaLinkedinIn> */}
           </p>
         </a>
         <a
@@ -33,11 +31,9 @@ const MySocials = ({fb, linkedin, gh}) => {
         >
           <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500">
             {gh}
-            {/* <LuGithub></LuGithub> */}
           </p>
         </a>
       </div>
     );
 };
-
 export default MySocials;

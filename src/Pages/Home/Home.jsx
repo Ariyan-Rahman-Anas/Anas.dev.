@@ -34,10 +34,10 @@ const Home = () => {
             />
           </div>
           <div className="info text-sm">
-            <h1 className="text-gray-500 font-semibold">A WEB DESIGNER</h1>
+            <h1 className="text-gray-500 font-semibold">A WEB DEVELOPER</h1>
             <h2 className="text-4xl  md:text-5xl mt-1">Ariyan Rahman Anas.</h2>
-            <p className="text-gray-500 my-2  ">
-              I am a Web Designer based in Chattogram, Bangladesh
+            <p className="text-gray-500 mt-3 mb-5  ">
+              I am a Web Developer based in Chattogram, Bangladesh
             </p>
             <a
               href={myResume}
