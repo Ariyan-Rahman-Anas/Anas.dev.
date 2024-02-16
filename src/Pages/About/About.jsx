@@ -61,8 +61,12 @@ const About = () => {
 
             {/* social media and resume btn */}
             <div className="md:hidden mt-12 flex flex-col md:flex-row items-center justify-between gap-5 ">
-              <MySocials fb={<FaFacebookF></FaFacebookF>} linkedin={<FaLinkedinIn></FaLinkedinIn>} gh={<LuGithub></LuGithub>} ></MySocials>
-              
+              <MySocials
+                fb={<FaFacebookF></FaFacebookF>}
+                linkedin={<FaLinkedinIn></FaLinkedinIn>}
+                gh={<LuGithub></LuGithub>}
+              ></MySocials>
+
               <DownloadMyResume></DownloadMyResume>
             </div>
           </div>
@@ -132,56 +136,13 @@ const About = () => {
 
           {/* Ariyan Rahman Anas's basic info again here for medium to large devices */}
           <div className="social-icons-resume-download hidden mt-0 md:mt-12 mb-12 md:flex flex-col md:flex-row items-center justify-between gap-5 ">
-            <div
-              className=" social-icons flex items-center justify-center gap-10 text-xl p-4 text-gray-100 rounded-lg  bg-gradient-to-l from-teal-950 to-gray-900 hover:to-gray-950 duration-500"
-              style={{
-                boxShadow: "1px 1px 3px #042f2e,-1px -1px 3px #042f2e ",
-              }}
-            >
-              <a
-                href="https://www.facebook.com/ariyanrahmananas69/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500  ">
-                  <FaFacebookF></FaFacebookF>
-                </p>
-              </a>
-              <a
-                href="https://www.linkedin.com/in/ariyanrahmananas/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500">
-                  <FaLinkedinIn></FaLinkedinIn>
-                </p>
-              </a>
-              <a
-                href="https://github.com/Ariyan-Rahman-Anas"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <p className="p-3 rounded-full bg-gradient-to-r from-teal-900 to-gray-950 hover:to-teal-600 hover:transform hover:scale-110 duration-500">
-                  <LuGithub></LuGithub>
-                </p>
-              </a>
-            </div>
+            {/* <MySocials></MySocials> */}
+            <MySocials
+              linkedin={<FaLinkedinIn></FaLinkedinIn>}
+              gh={<LuGithub></LuGithub>}
+            ></MySocials>
 
-            <div
-              className="resume-download flex items-center justify-start gap-10 text-xl p-4 text-gray-100 rounded-lg  bg-gradient-to-l from-teal-950 to-gray-900 hover:to-gray-950 duration-500"
-              style={{
-                boxShadow: "1px 1px 3px #042f2e,-1px -1px 3px #042f2e ",
-              }}
-            >
-              <a
-                href={myResume}
-                download
-                className="flex text-base items-center justify-between gap-2 py-2 px-4  bg-gradient-to-r from-teal-950 to-gray-950 hover:to-teal-600  rounded-md   hover:transform hover:scale-105 duration-500 "
-              >
-                Download My Resume
-                <LuFileDown></LuFileDown>
-              </a>
-            </div>
+            <DownloadMyResume></DownloadMyResume>
           </div>
         </div>
 
