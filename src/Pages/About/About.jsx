@@ -51,7 +51,7 @@ const About = () => {
           <div className="down px-8 pb-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg">
             <img src={arrow} alt="" />
             <h1 className="text-4xl font-semibold mt-5">Ariyan Rahman Anas</h1>
-            <p className="mt-3 text-gray500">
+            <p className="mt-3 text-gray-400">
               I am a Bangladesh-based Front-End Web Developer with a focus on
               Back-End Development. I have a diverse range of experience having
               worked across various fields and industries.
