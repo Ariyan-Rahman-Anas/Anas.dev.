@@ -1,22 +1,19 @@
-import fitness from "./../../assets/projects/fitness.png"
-import jobCons from "./../../assets/projects/jobCons.png"
-import DevAuto from "./../../assets/projects/DevAuto.png"
-import g3Architect from "./../../assets/projects/g3Architect.png"
-import fruitBrust from "./../../assets/projects/fruitBrust.png"
-import teaHouse from "./../../assets/projects/teaHouse.png"
+import fitness from "./../../assets/projects/fitness.png";
+import jobCons from "./../../assets/projects/jobCons.png";
+import DevAuto from "./../../assets/projects/DevAuto.png";
+import g3Architect from "./../../assets/projects/g3Architect.png";
+import fruitBrust from "./../../assets/projects/fruitBrust.png";
+import teaHouse from "./../../assets/projects/teaHouse.png";
 
-import { GiPolarStar } from "react-icons/gi";
 import { CgWebsite } from "react-icons/cg";
-// import { LuGithub } from "react-icons/lu";
 import { FaGithub } from "react-icons/fa";
-import hotGadget from "./../../assets/projects/hotGadget.png"
-import penguinFashion from "./../../assets/projects/penguinFashion.png"
-import influProduct from "./../../assets/projects/influProduct.png"
-import justice from "./../../assets/projects/justice.png"
-import bikerBD from "./../../assets/projects/bikerBD.png"
-import { Link } from "react-router-dom"
-
-
+import hotGadget from "./../../assets/projects/hotGadget.png";
+import penguinFashion from "./../../assets/projects/penguinFashion.png";
+import influProduct from "./../../assets/projects/influProduct.png";
+import justice from "./../../assets/projects/justice.png";
+import bikerBD from "./../../assets/projects/bikerBD.png";
+import { Link } from "react-router-dom";
+import PageTitle from "../../Components/PageTitle";
 
 const Projects = () => {
   return (
@@ -188,11 +185,7 @@ const Projects = () => {
       </section>
       <section className="right md:w-[70%] flex flex-col gap-8 ">
         <div className="upper">
-          <div className="up flex items-center justify-center gap-1 text-3xl lg:text-6xl font-semibold ">
-            <GiPolarStar className="text-teal-700 text-3xl lg:text-5xl "></GiPolarStar>
-            <h1>ALL PROJECTS</h1>
-            <GiPolarStar className="text-teal-700 text-3xl lg:text-5xl "></GiPolarStar>
-          </div>
+          <PageTitle title={"ALL PROJECTS"}></PageTitle>
         </div>
         <div className="down grid grid-cols-1 md:grid-cols-2 gap-8 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg p-5">
           <div
