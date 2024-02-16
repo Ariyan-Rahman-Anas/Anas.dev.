@@ -14,8 +14,8 @@ const Footer = () => {
         <span>
           <span>{`Copy Right-${currentYear} ||`} </span>
           <span>
-            ©All rights reserved by{" "}
-            <Link className="text-teal-500">Ariyan Rahman Anas</Link>{" "}
+            ©All rights reserved by
+            <Link to={"/"} > Ariyan Rahman Anas</Link>
           </span>
         </span>
       </div>

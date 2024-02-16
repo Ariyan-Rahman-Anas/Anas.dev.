@@ -1,7 +1,7 @@
 import PageTitle from "../../Components/PageTitle";
 import me2 from "./../../assets/me3.jpg";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { LuGithub} from "react-icons/lu";
+import { LuGithub } from "react-icons/lu";
 import arrow from "./../../assets/arrow.png";
 import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
@@ -9,21 +9,21 @@ import DownloadMyResume from "../../Components/DownloadMyResume";
 const Credentials = () => {
   return (
     <div>
-      <div className=" mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 ">
-        <div className="left w-full col-span-2 md:col-span-1 ">
+      <div className="md:relative mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 ">
+        <div className="left md:fixed  top-24 bsolute let-0  w-full col-span-2 md:col-span-1 ">
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="2000"
             data-aos-anchor-placement="center-bottom"
-            className="left p-8 w-full  col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
+            className="left p-8 w-full md:w-[30%] col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
           >
-            <img src={me2} alt="" className="rounded-lg" />
+            <img src={me2} alt="" className="rounded-lg w-full " />
           </div>
         </div>
 
         {/* right section is starts from here */}
-        <div className="right w-full col-span-2 ">
+        <div className="right md:absolute right-0 w-full md:w-[66%] col-span-2 ">
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
@@ -38,7 +38,7 @@ const Credentials = () => {
               <h1 className="text-4xl font-semibold mt-5">
                 Welcome to my Credentials Showcase!
               </h1>
-              <p className="mt-3 text-gray-400">
+              <p className="mt-3 text-gray-400 text-base leading-7 ">
                 Here, you will find a treasure trove of my educational
                 achievements and professional successes. From degrees to
                 certifications, each entry tells a story of my dedication to
