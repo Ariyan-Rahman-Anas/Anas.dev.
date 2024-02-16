@@ -14,7 +14,7 @@ const Credentials = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5001/credentials")
+    fetch("https://my-portfolio-back-end-server.vercel.app/credentials")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch credentials");
