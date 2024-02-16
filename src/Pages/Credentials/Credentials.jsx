@@ -1,8 +1,7 @@
 import PageTitle from "../../Components/PageTitle";
 import me2 from "./../../assets/me3.jpg";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { LuGithub, LuFileDown } from "react-icons/lu";
-import myResume from "./../../assets/Ariyan-Rahman-Anas-Resume.pdf";
+import { LuGithub} from "react-icons/lu";
 import arrow from "./../../assets/arrow.png";
 import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
