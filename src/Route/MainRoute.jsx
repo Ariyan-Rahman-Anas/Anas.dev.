@@ -31,14 +31,6 @@ const MainRoute = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`http://localhost:5001/credentials/${params.id}`),
       },
-      // {
-      //   path: "serviceDetails/:id",
-      //   element: <CredentialsDetails></CredentialsDetails>,
-      //   loader: ({ params }) =>
-      //     fetch(
-      //       `https://car-doctor-server-sigma-ruby.vercel.app/services/${params.id}`
-      //     ),
-      // },
       {
         path: "projects",
         element: <Projects></Projects>,
