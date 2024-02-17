@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const CredentialCard = ({ credential }) => {
   const { _id, degreeTitle, img } = credential || {};
-  console.log("id is", _id);
+
   return (
     <div
       data-aos="zoom-in-up"

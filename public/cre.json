@@ -4,15 +4,35 @@
     "title": "Computer Science and Technology",
     "degreeTitle": "Diploma in Engineering",
     "institute": "Chattogram Polytechnic Institute",
+    "instituteUrl": "https://chattogram.polytech.gov.bd",
     "img": "https://i.ibb.co/0K78PxR/Diploma.jpg",
-    "description": "Completed a rigorous program at Chattogram Polytechnic Institute, specializing in Computer Science and Technology. The curriculum encompassed a wide range of subjects including software development, computer architecture, networking, and database management. Hands-on training and practical projects provided valuable experience in designing and implementing software solutions, troubleshooting technical issues, and collaborating effectively in team environments. This diploma equips me with a solid foundation in computer engineering principles and practical skills essential for success in the field."
+    "description": "Completed a rigorous program at Chattogram Polytechnic Institute, which is located in Nasirabad Khulshi-4225 in Chattogram Bangladesh. Specializing in Computer Science and Technology. The curriculum encompassed a wide range of subjects including software development, computer architecture, networking, and database management. Hands-on training and practical projects provided valuable experience in designing and implementing software solutions, troubleshooting technical issues, and collaborating effectively in team environments. This diploma equips me with a solid foundation in computer engineering principles and practical skills essential for success in the field."
   },
   {
     "id": 2,
     "title": "General",
     "degreeTitle": "Secondary School Certificate (SSC)",
     "institute": "Baitush Sharaf Ideal Kamil (M. A) Madrasah",
+    "instituteUrl": "https://104395.ebmeb.gov.bd/",
     "img": "https://i.ibb.co/vzqbwNH/Dakhil.jpg",
-    "description": "Achieved Secondary School Certificate (SSC) from Baitush Sharaf Ideal Kamil (M. A) Madrasah. The program covered a broad spectrum of subjects, including mathematics, science, literature, and social studies. Throughout my schooling, I demonstrated strong academic performance and actively participated in extracurricular activities such as sports and debate competitions. This certificate marks the successful completion of my secondary education and prepares me for further academic pursuits."
+    "description": "Achieved Secondary School Certificate (SSC) from Baitush Sharaf Ideal Kamil (M. A) Madrasah, which is located in Dhaniyalapara Dewanhat Double Mooring in Chattogram Bangladesh. The program covered a broad spectrum of subjects, including mathematics, science, literature, and social studies. Throughout my schooling, I demonstrated strong academic performance and actively participated in extracurricular activities such as sports and debate competitions. This certificate marks the successful completion of my secondary education and prepares me for further academic pursuits."
+  },
+  {
+    "id": 3,
+    "title": "Class VIII",
+    "degreeTitle": "Junior School Certificate (JSC)",
+    "institute": "Battali Shamsul Ulum Dakhil Madrasah, Cumilla",
+    "instituteUrl": "https://www.sohopathi.com/battali-shamsul-ulum-dakhil-madrasa/?mode=list",
+    "img": "https://i.ibb.co/w0Gr71p/JDC.jpg",
+    "description": "Attained Junior School Certificate (JSC) from Battali Shamsul Ulum Dakhil Madrasah, which is located in Battali Bazar Nangalkot in Cumilla Bangladesh. The curriculum provided a comprehensive education in subjects such as mathematics, science, language, and social studies. During my time at Battali Shamsul Ulum Dakhil Madrasah, Cumilla, I actively participated in various extracurricular activities, developed strong study habits, and fostered a love for learning. This certificate signifies the successful completion of my junior school education and prepares me for further academic challenges."
+  },
+  {
+    "id": 4,
+    "title": "Web Design",
+    "degreeTitle": "Responsive Web Design",
+    "institute": "Free Code Camp",
+    "instituteUrl": "https://www.freecodecamp.org/certification/AriyanRahmanAnas/responsive-web-design",
+    "img": "https://i.ibb.co/w6CWJhT/Free-Code-Camp-Responsive-Web-Design.png",
+    "description": "Completed the Responsive Web Design certification from Free Code Camp. This comprehensive program covered topics such as HTML, CSS, JavaScript, Bootstrap, and Responsive Design principles. Through hands-on projects and interactive challenges, I acquired the skills necessary to design and develop responsive and user-friendly websites. The certification from Free Code Camp validates my proficiency in web design and demonstrates my ability to create visually appealing and functional web experiences."
   }
 ]

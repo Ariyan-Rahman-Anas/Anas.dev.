@@ -1,7 +1,7 @@
 import cover from "./../../assets/myCover.jpeg";
 import arrow from "./../../assets/arrow.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { LuGithub} from "react-icons/lu";
+import { LuGithub } from "react-icons/lu";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -35,7 +35,7 @@ const About = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
           data-aos-anchor-placement="center-bottom"
-          className="left p-6 w-full  col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
+          className="left p-6 w-full col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
         >
           <img src={cover} alt="" className="rounded-lg" />
         </div>
@@ -136,7 +136,8 @@ const About = () => {
           {/* Ariyan Rahman Anas's basic info again here for medium to large devices */}
           <div className="social-icons-resume-download hidden mt-0 md:mt-12 mb-12 md:flex flex-col md:flex-row items-center justify-between gap-5 ">
             {/* <MySocials></MySocials> */}
-            <MySocials fb={<FaFacebookF></FaFacebookF>}
+            <MySocials
+              fb={<FaFacebookF></FaFacebookF>}
               linkedin={<FaLinkedinIn></FaLinkedinIn>}
               gh={<LuGithub></LuGithub>}
             ></MySocials>
