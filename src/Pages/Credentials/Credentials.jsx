@@ -47,7 +47,7 @@ const Credentials = () => {
   }
 
   return (
-    <div className="border- h-[100rem] ">
+    <div className="border- h-[160rem]  md:h-[100rem] ">
       <div className="md:relative mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 ">
         <div className="left md:fixed  top-24 bsolute let-0  w-full col-span-2 md:col-span-1 ">
           <div
@@ -105,6 +105,7 @@ const Credentials = () => {
                   ></CredentialCard>
                 ))}
               </div>
+              <h1>hlw</h1>
             </div>
           </div>
         </div>

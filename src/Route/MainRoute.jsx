@@ -6,6 +6,7 @@ import Projects from "../Pages/Projects/Projects";
 import Contact from "../Pages/Contact/Contact";
 import Credentials from "../Pages/Credentials/Credentials";
 import OfferingServices from "../Pages/Offering Services/OfferingServices";
+import CredentialsDetails from "../Pages/Credentials/CredentialsDetails";
 
 const MainRoute = createBrowserRouter([
   {
@@ -17,23 +18,37 @@ const MainRoute = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/about",
+        path: "about",
         element: <About></About>,
       },
       {
-        path: "/credentials",
+        path: "credentials",
         element: <Credentials></Credentials>,
       },
       {
-        path: "/projects",
+        path: "credentialDetails/:id",
+        element: <CredentialsDetails></CredentialsDetails>,
+        loader: ({ params }) =>
+          fetch(`http://localhost:5001/credentials/${params.id}`),
+      },
+      // {
+      //   path: "serviceDetails/:id",
+      //   element: <CredentialsDetails></CredentialsDetails>,
+      //   loader: ({ params }) =>
+      //     fetch(
+      //       `https://car-doctor-server-sigma-ruby.vercel.app/services/${params.id}`
+      //     ),
+      // },
+      {
+        path: "projects",
         element: <Projects></Projects>,
       },
       {
-        path: "/offeringServices",
+        path: "offeringServices",
         element: <OfferingServices></OfferingServices>,
       },
       {
-        path: "/contact",
+        path: "contact",
         element: <Contact></Contact>,
       },
     ],
