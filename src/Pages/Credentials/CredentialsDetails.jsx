@@ -3,8 +3,16 @@ import PageTitle from "../../Components/PageTitle";
 
 const CredentialsDetails = () => {
   const credential = useLoaderData();
-  const { title, degreeTitle, img, institute, instituteUrl, description } =
-    credential || {};
+  const {
+    title,
+    degreeTitle,
+    img,
+    institute,
+    instituteUrl,
+    description,
+    descriptionAction,
+    grateful,
+  } = credential || {};
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 md:mt-16  ">
@@ -42,7 +50,11 @@ const CredentialsDetails = () => {
           >
             {institute}
           </a>
-          <p className="text-sm mt-5 ">{description}</p>
+          <p className="text-sm my-3 ">{description}</p>
+          <p>{descriptionAction} </p>
+          <p className="font-semibold text-right mt-3 ">
+            <i>🔊 {grateful}🤍</i>
+          </p>
         </div>
       </div>
     </div>
