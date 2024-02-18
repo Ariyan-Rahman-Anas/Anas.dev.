@@ -47,9 +47,9 @@ const Credentials = () => {
   }
 
   return (
-    <div className="border- h-[160rem]  md:h-[100rem] ">
+    <div className="h-[160rem]  md:h-[100rem] ">
       <div className="md:relative mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 ">
-        <div className="left md:fixed  top-24 bsolute let-0  w-full col-span-2 md:col-span-1 ">
+        <div className="left md:fixed top-24 let-0  w-full col-span-2 md:col-span-1 ">
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
@@ -70,7 +70,6 @@ const Credentials = () => {
             data-aos-anchor-placement="center-bottom"
             className="right col-span-2 flex flex-col gap-5  "
           >
-            {/* <PageTitle title={"SELF-SUMMARY"}></PageTitle> */}
             <PageTitle title={"MY-CREDENTIALS"}></PageTitle>
             <div className="down px-8 pb-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg">
               <img src={arrow} alt="" />
