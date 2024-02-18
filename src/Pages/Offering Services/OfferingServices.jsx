@@ -3,8 +3,8 @@ import PageTitle from "../../Components/PageTitle";
 import arrow from "./../../assets/arrow.png";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
-import MySocials from './../../Components/MySocials';
-import DownloadMyResume from './../../Components/DownloadMyResume';
+import MySocials from "./../../Components/MySocials";
+import DownloadMyResume from "./../../Components/DownloadMyResume";
 
 const OfferingServices = () => {
   return (
@@ -32,19 +32,23 @@ const OfferingServices = () => {
             className="right col-span-2 flex flex-col gap-5  "
           >
             <PageTitle title={"OFFERING SERVICES"}></PageTitle>
-            <div className="down px-8 pb-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg">
+            <div className="down px-8 pb-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg text-sm ">
               <img src={arrow} alt="an arrow" />
               <h1 className="text-4xl font-semibold mt-5">
                 Welcome to my Credentials Showcase!
               </h1>
-              <p className="mt-3 text-gray-400 text-base leading-7 ">
-                Here, you will find a treasure trove of my educational
-                achievements and professional successes. From degrees to
-                certifications, each entry tells a story of my dedication to
-                becoming the best in my field. Dive in and explore the colorful
-                array of qualifications that highlight my skills and
-                experiences. This is where my journey meets its milestones come,
-                discover the essence of my expertise!
+              <p className="mt-3 text-gray-400 text-base ">
+                {`Welcome to my "MERN Stack Web Development Services" page! As a
+                seasoned web developer, I specialize in crafting cutting-edge
+                solutions using the powerful MERN stack – MongoDB, Express.js,
+                React.js, and Node.js.`}
+              </p>
+              <p className="mt-3 text-gray-400 text-base ">{`With expertise in both frontend and backend development, I offer a comprehensive range of services to bring your digital ideas to life. Whether you're launching a new website, building a dynamic web application, or enhancing an existing platform, I have the skills and experience to deliver results that exceed your expectations.`}</p>
+              <p className="mt-3 text-gray-400 text-base ">
+                {`From concept to deployment, I work closely with clients to understand their unique requirements and provide tailored solutions that align with their business objectives. With a focus on scalability, performance, and user experience, I ensure that your MERN stack project is not only functional but also future-proof.`}{" "}
+              </p>
+              <p className="mt-3 text-gray-400 text-base ">
+                {`Explore my MERN stack web development services below to see how I can help you transform your vision into reality. Feel free to reach out with any questions or project inquiries – I'm here to help you succeed online!`}
               </p>
 
               {/* social media and resume btn */}
@@ -57,14 +61,6 @@ const OfferingServices = () => {
 
                 <DownloadMyResume></DownloadMyResume>
               </div>
-              {/* <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16 ">
-                {credentials.map((credential) => (
-                  <CredentialCard
-                    key={credential.id}
-                    credential={credential}
-                  ></CredentialCard>
-                ))}
-              </div> */}
             </div>
           </div>
         </div>
