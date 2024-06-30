@@ -7,11 +7,14 @@ import Contact from "../Pages/Contact/Contact";
 import Credentials from "../Pages/Credentials/Credentials";
 import OfferingServices from "../Pages/Offering Services/OfferingServices";
 import CredentialsDetails from "../Pages/Credentials/CredentialsDetails";
+import ErrorPage from "../Pages/Error/ErrorPage";
+import Dashboard from "../Pages/Dashboard/Dashboard";
 
 const MainRoute = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -44,6 +47,10 @@ const MainRoute = createBrowserRouter([
       {
         path: "contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "dashboard",
+        element :<Dashboard/>
       },
     ],
   },
