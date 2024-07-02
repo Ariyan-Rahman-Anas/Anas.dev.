@@ -31,10 +31,6 @@ const MainRoute = createBrowserRouter([
       {
         path: "credentialDetails/:id",
         element: <CredentialsDetails></CredentialsDetails>,
-        loader: ({ params }) =>
-          fetch(
-            `https://my-portfolio-back-end-server.vercel.app/credentials/${params.id}`
-          ),
       },
       {
         path: "projects",
@@ -50,7 +46,7 @@ const MainRoute = createBrowserRouter([
       },
       {
         path: "dashboard",
-        element :<Dashboard/>
+        element: <Dashboard />,
       },
     ],
   },

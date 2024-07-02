@@ -185,7 +185,8 @@ const Contact = () => {
               />
 
               <input
-                type="text" required
+                type="text"
+                required
                 name="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}

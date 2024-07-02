@@ -13,8 +13,8 @@ const Navbar = () => {
   }
 
   return (
-    <div>
-      <nav className="flex flex-col md:flex-row md:items-center justify-between text-gray-500 bg-[#0f0f0f]  py-2 ">
+    <div className="sticky top-0 z-[1000]">
+      <nav className="flex flex-col md:flex-row md:items-center justify-between text-gray-500 bg-black py-3 ">
         <div className="nav-left flex items-center justify-between w-full md:w-fit z-50 ">
           <Link to={"/"}>
             <div className="logo w-[12rem] ">
@@ -112,7 +112,7 @@ const Navbar = () => {
                     ? "border-b-2 border-b-white rounded-sm text-white duration-500 "
                     : "border-b-2 border-b-transparent duration-500 "
                 }
-              >
+              >Dashboard
                 <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300 "></span>
               </NavLink>
             </li>
@@ -122,7 +122,7 @@ const Navbar = () => {
           <button>
             <Link
               to={"/contact"}
-              className="py-2 px-4 text-gray-100 bg-gradient-to-t from-teal-600 to-gray-800 rounded-md flex flex-col items-center justify-center  hover:transform hover:scale-110 duration-500"
+              className="py-2 px-4 font-semibold text-gray-100 bg-teal-700 hover:bg-teal-600 rounded-md flex flex-col items-center justify-center  duration-500"
             >{`Let's talk`}</Link>
           </button>
         </div>

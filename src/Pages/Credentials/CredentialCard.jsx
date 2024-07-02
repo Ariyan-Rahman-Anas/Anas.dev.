@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 const CredentialCard = ({ credential }) => {
-  const { _id, degreeTitle, img } = credential || {};
+  const { _id, degreeTitle, image } = credential || {};
 
   return (
     <div
@@ -13,12 +13,13 @@ const CredentialCard = ({ credential }) => {
     >
       <div className="relative overflow-hidden ">
         <img
-          src={img}
+          src={image}
           alt=""
           className="rounded-lg w-full group-hover:scale-125 duration-500  "
         />
         <div className="hidden absolute top-0 bg-black rounded-lg w-full h-full group-hover:flex items-center justify-center bg-opacity-60 duration-500  ">
           <Link
+            state={{ credential }}
             to={`/credentialDetails/${_id}`}
             className="py-2 px-5 text-xl text-gray-100 bg-gradient-to-t from-teal-600 to-gray-800 rounded-md flex flex-col items-center justify-center  hover:transform hover:scale-110 duration-500"
           >

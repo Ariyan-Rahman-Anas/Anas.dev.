@@ -1,17 +1,19 @@
-import { useLoaderData } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import PageTitle from "../../Components/PageTitle";
 
 const CredentialsDetails = () => {
-  const credential = useLoaderData();
+  const location = useLocation();
+  const { credential } = location.state || {};
+
   const {
     title,
     degreeTitle,
-    img,
+    image,
     institute,
     instituteUrl,
     description,
-    descriptionAction,
-    grateful,
+    cto,
+    greeting,
   } = credential || {};
 
   return (
@@ -24,7 +26,7 @@ const CredentialsDetails = () => {
         className="left col-span-2 md:col-span-1 w-full md:w-1/ p-6 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
       >
         <img
-          src={img}
+          src={image}
           alt="image of certificate"
           className="w-full rounded-lg  "
         />
@@ -51,9 +53,9 @@ const CredentialsDetails = () => {
             {institute}
           </a>
           <p className="text-sm my-3 ">{description}</p>
-          <p>{descriptionAction} </p>
+          <p>{cto} </p>
           <p className="font-semibold text-right mt-3 ">
-            <i>🔊 {grateful}🤍</i>
+            <i>🔊 {greeting}🤍</i>
           </p>
         </div>
       </div>

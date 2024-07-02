@@ -7,44 +7,29 @@ import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
 import { useEffect, useState } from "react";
 import CredentialCard from "./CredentialCard";
-import loading from "./../../assets/loading.gif";
+import Spinner from "./../../assets/Spinner.gif";
+import { getData } from "../../Hooks/apiUtils";
 
 const Credentials = () => {
   const [credentials, setCredentials] = useState(null);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://my-portfolio-back-end-server.vercel.app/credentials")
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error("Failed to fetch credentials");
-        }
-        return res.json();
-      })
-      .then((data) => setCredentials(data))
-      .catch((error) => setError(error.message));
-  }, []);
-
-  if (error) {
-    return (
-      <div className="flex items-center justify-center h-[90vh] text-center ">
-        <div className="w-1/ w-[5rem] ">
-          <img src={loading} alt="loader" className="w-full" />
-          <p>Loading...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (!credentials) {
-    return (
-      <div className="flex items-center justify-center h-[90vh] ">
-        <div className="w-1/ w-[5rem] ">
-          <img src={loading} alt="loader" className="w-full" />
-        </div>
-      </div>
-    );
-  }
+    const fetchData = async () => {
+      try {
+        setLoading(true)
+        const responseData = await getData("credentials");
+        setCredentials(responseData.data);
+      } catch (error) {
+        setError(error)
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchData();
+  }, [])
+  
 
   return (
     <div className="h-[160rem]  md:h-[100rem] ">
@@ -96,13 +81,28 @@ const Credentials = () => {
 
                 <DownloadMyResume></DownloadMyResume>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16 ">
-                {credentials.map((credential) => (
-                  <CredentialCard
-                    key={credential.id}
-                    credential={credential}
-                  ></CredentialCard>
-                ))}
+
+              <div>
+                {loading ? (
+                  <div className="flex items-center justify-center w-[5rem] min-h-[50vh] mx-auto ">
+                    <img
+                      src={Spinner}
+                      alt="Loading..."
+                      className="h-full w-full"
+                    />
+                  </div>
+                ) : error ? (
+                  <h1>{error}</h1>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16 ">
+                    {credentials?.map((credential) => (
+                      <CredentialCard
+                        key={credential._id}
+                        credential={credential}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
