@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import AdminModal from "./../../Components/AdminModal";
@@ -6,12 +6,59 @@ import PageTitle from "../../Components/PageTitle";
 import cover from "./../../assets/myCover.jpeg";
 import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
+import { postDataWithFile } from "../../Hooks/apiUtils";
 
 const Dashboard = () => {
+  const formRef = useRef(null);
   const [showModal, setShowModal] = useState(true);
+  const [aside, setAside] = useState(false);
+  const [error, setError] = useState("");
 
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  //handle submit credentials
+  const handleSubmitProject = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const title = form.title.value;
+    const details = form.details.value;
+    const frontCode = form.frontCode.value;
+    const backCode = form.backCode.value;
+    const liveLink = form.liveLink.value;
+    const image = form.image.files[0];
+
+    try {
+      const aProject = {
+        title,
+        details,
+        frontCode,
+        backCode,
+        liveLink,
+        aside,
+        image,
+      };
+      console.log("new project is : ", aProject);
+      const hashFile = !!form.image.files[0];
+      try {
+        const result = await postDataWithFile("projects", aProject, hashFile);
+        console.log("Project posted successfully:", result);
+      } catch (error) {
+        console.error(
+          "Error with storing the project image in cloudinary :",
+          error
+        );
+      }
+      form.reset();
+      // toast.success("Thanks for your Contribution!");
+    } catch (error) {
+      console.error("Error with posting a project: ", error);
+    }
+  };
+
+  const handleRadioChange = (e) => {
+    setAside(e.target.value === "yes");
   };
 
   return (
@@ -77,7 +124,7 @@ const Dashboard = () => {
             >
               <h1 className="text-3xl font-semibold mb-5 ">Add a Credential</h1>
               <div>
-                <form className="">
+                <form>
                   <div className="flex flex-col md:flex-row gap-3 mb-3">
                     <input
                       name="title"
@@ -160,7 +207,7 @@ const Dashboard = () => {
             >
               <h1 className="text-3xl font-semibold mb-5 ">Add a Projects</h1>
               <div>
-                <form className="">
+                <form onSubmit={handleSubmitProject} ref={formRef}>
                   <div className="flex flex-col md:flex-row gap-3 mb-3">
                     <input
                       name="title"
@@ -179,21 +226,12 @@ const Dashboard = () => {
                   </div>
                   <div className="flex flex-col md:flex-row gap-3 mb-3">
                     <input
-                      name="liveLink"
-                      required
-                      placeholder="Live Link:"
-                      type="text"
-                      className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
-                    />
-                    <input
                       name="frontCode"
                       required
                       placeholder="Front-End code base link:"
                       type="text"
                       className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                     />
-                  </div>
-                  <div className="flex flex-col md:flex-row gap-3 mb-4">
                     <input
                       name="backCode"
                       required
@@ -201,12 +239,48 @@ const Dashboard = () => {
                       type="text"
                       className="w-full p-2 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                     />
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-3 mb-3">
+                    <input
+                      name="liveLink"
+                      required
+                      placeholder="Live Link:"
+                      type="text"
+                      className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                    />
                     <input
                       name="image"
                       required
                       type="file"
                       className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                     />
+                  </div>
+                  <div className="aside flex items-center gap-3 mb-3">
+                    <label className="font-semibold  ">Aside:</label>
+                    <div className="flex items-center gap-[.10rem] ">
+                      <input
+                        required
+                        type="radio"
+                        name="aside"
+                        value="yes"
+                        onChange={handleRadioChange}
+                      />
+                      <label htmlFor="yes" className="text-sm font-medium">
+                        Yes
+                      </label>
+                    </div>
+                    <div className="flex items-center gap-[.10rem] ">
+                      <input
+                        required
+                        type="radio"
+                        name="aside"
+                        value="no"
+                        onChange={handleRadioChange}
+                      />
+                      <label htmlFor="no" className="text-sm font-medium">
+                        No
+                      </label>
+                    </div>
                   </div>
                   <input
                     type="submit"

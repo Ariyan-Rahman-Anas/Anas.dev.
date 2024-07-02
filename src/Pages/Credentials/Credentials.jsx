@@ -7,8 +7,8 @@ import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
 import { useEffect, useState } from "react";
 import CredentialCard from "./CredentialCard";
-import Spinner from "./../../assets/Spinner.gif";
 import { getData } from "../../Hooks/apiUtils";
+import Spinner from './../../Components/Spinner';
 
 const Credentials = () => {
   const [credentials, setCredentials] = useState(null);
@@ -84,13 +84,14 @@ const Credentials = () => {
 
               <div>
                 {loading ? (
-                  <div className="flex items-center justify-center w-[5rem] min-h-[50vh] mx-auto ">
-                    <img
-                      src={Spinner}
-                      alt="Loading..."
-                      className="h-full w-full"
-                    />
-                  </div>
+                <Spinner />
+                  // <div className="flex items-center justify-center w-[5rem] min-h-[50vh] mx-auto ">
+                  //   <img
+                  //     src={Spinner}
+                  //     alt="Loading..."
+                  //     className="h-full w-full"
+                  //   />
+                  // </div>
                 ) : error ? (
                   <h1>{error}</h1>
                 ) : (
