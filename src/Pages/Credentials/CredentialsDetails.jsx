@@ -21,7 +21,7 @@ const CredentialsDetails = () => {
       <div
         data-aos="zoom-in-up"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos-anchor-placement="center-bottom"
         className="left col-span-2 md:col-span-1 w-full md:w-1/ p-6 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
       >
@@ -36,7 +36,7 @@ const CredentialsDetails = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="p-6 mt-10 md:col-span-1 text-gray-400 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
         >

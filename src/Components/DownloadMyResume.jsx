@@ -1,5 +1,5 @@
 import { LuFileDown } from "react-icons/lu";
-import myResume from "./../assets/Ariyan-Rahman-Anas-Resume.pdf"
+import myResume from "./../assets/my-resume.pdf"
 
 const DownloadMyResume = () => {
   return (

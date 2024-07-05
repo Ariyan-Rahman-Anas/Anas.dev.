@@ -18,7 +18,52 @@ const Dashboard = () => {
     setShowModal(false);
   };
 
-  //handle submit credentials
+  //handle submit credential
+  const handleSubmitCredential = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const title = form.title.value;
+    const degreeTitle = form.degreeTitle.value;
+    const institute = form.institute.value;
+    const instituteURL = form.instituteURL.value;
+    const description = form.description.value;
+    const cto = form.cto.value;
+    const greeting = form.greeting.value;
+    const image = form.image.files[0];
+
+    try {
+      const aCredential = {
+        title,
+        degreeTitle,
+        institute,
+        instituteURL,
+        description,
+        cto,
+        greeting,
+        image,
+      };
+      const hashFile = !!form.image.files[0];
+      try {
+        const result = await postDataWithFile(
+          "credentials",
+          aCredential,
+          hashFile
+        );
+        console.log("Credential posted successfully!", result);
+        form.reset();
+        alert("Project posted Successfully!");
+      } catch (error) {
+        console.error(
+          "Error with storing the credential image in cloudinary :",
+          error
+        );
+      }
+    } catch (error) {
+      console.error("Error with posting a credential: ", error);
+    }
+  };
+
+  //handle submit project
   const handleSubmitProject = async (e) => {
     e.preventDefault();
     const form = e.target;
@@ -39,24 +84,24 @@ const Dashboard = () => {
         aside,
         image,
       };
-      console.log("new project is : ", aProject);
       const hashFile = !!form.image.files[0];
       try {
         const result = await postDataWithFile("projects", aProject, hashFile);
         console.log("Project posted successfully:", result);
+        form.reset();
+        alert("Project posted Successfully!");
       } catch (error) {
         console.error(
           "Error with storing the project image in cloudinary :",
           error
         );
       }
-      form.reset();
-      // toast.success("Thanks for your Contribution!");
     } catch (error) {
       console.error("Error with posting a project: ", error);
     }
   };
 
+  //radio input handling in the project section
   const handleRadioChange = (e) => {
     setAside(e.target.value === "yes");
   };
@@ -73,7 +118,7 @@ const Dashboard = () => {
             <div
               data-aos="zoom-in-up"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-anchor-placement="center-bottom"
               className="left p-6 w-full col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
             >
@@ -83,7 +128,7 @@ const Dashboard = () => {
             <div
               data-aos="zoom-in-up"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-anchor-placement="center-bottom"
               className="right col-span-2 flex flex-col gap-5  "
             >
@@ -115,16 +160,17 @@ const Dashboard = () => {
           {/* top section ends here */}
 
           <section className="my-10 flex flex-col  gap-8 text-gray-500">
+            {/* credential section is starts form here */}
             <div
               data-aos="zoom-in-up"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-anchor-placement="center-bottom"
               className="left flex-1 p-2 md:p-6  bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
             >
               <h1 className="text-3xl font-semibold mb-5 ">Add a Credential</h1>
               <div>
-                <form>
+                <form onSubmit={handleSubmitCredential} ref={formRef}>
                   <div className="flex flex-col md:flex-row gap-3 mb-3">
                     <input
                       name="title"
@@ -198,10 +244,11 @@ const Dashboard = () => {
               </div>
             </div>
 
+            {/* project section is starts form here */}
             <div
               data-aos="zoom-in-up"
               data-aos-easing="ease-out-cubic"
-              data-aos-duration="2000"
+              data-aos-duration="1000"
               data-aos-anchor-placement="center-bottom"
               className="right flex-1  p-2 md:p-6  bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
             >

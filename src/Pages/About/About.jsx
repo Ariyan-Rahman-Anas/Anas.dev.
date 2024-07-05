@@ -33,7 +33,7 @@ const About = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="left p-6 w-full col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
         >
@@ -44,7 +44,7 @@ const About = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="right col-span-2 flex flex-col gap-5  "
         >
@@ -78,7 +78,7 @@ const About = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="left text-xs 2xl:text-base px-2 py-5 md:p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
         >
@@ -150,7 +150,7 @@ const About = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="right text-xs 2xl:text-base px-2 py-5 md:p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
         >
@@ -222,7 +222,7 @@ const About = () => {
         id="skills"
         data-aos="zoom-in-up"
         data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
+        data-aos-duration="1000"
         data-aos-anchor-placement="center-bottom"
         className="my-10 p-5 text-gray-500 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
       >
@@ -231,7 +231,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -243,7 +243,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -255,7 +255,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -267,7 +267,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -279,7 +279,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -291,7 +291,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -303,7 +303,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -315,7 +315,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -327,7 +327,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -339,7 +339,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -351,7 +351,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="aos-init aos-animate"
           >
@@ -363,7 +363,7 @@ const About = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
           >
             <h1>

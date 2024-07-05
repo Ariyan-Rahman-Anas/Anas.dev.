@@ -7,7 +7,7 @@ const CredentialCard = ({ credential }) => {
     <div
       data-aos="zoom-in-up"
       data-aos-easing="ease-out-cubic"
-      data-aos-duration="2000"
+      data-aos-duration="1000"
       data-aos-anchor-placement="center-bottom"
       className="group p-5 pb-3 text-center  bg-gradient-to-r from-gray-950 to-teal-950 hover:to-teal-900 duration-500 rounded-lg"
     >

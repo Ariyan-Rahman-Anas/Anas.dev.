@@ -1,8 +1,3 @@
-import me from "./../../assets/me.png";
-import sign from "./../../assets/sign.png";
-import fitness from "./../../assets/projects/fitness.png";
-import gfonts from "./../../assets/gfonts.png";
-import arrow from "./../../assets/arrow.png";
 import { TbArrowLoopRight } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import { IoCameraOutline, IoColorFilterOutline } from "react-icons/io5";
@@ -11,7 +6,12 @@ import { LiaDev } from "react-icons/lia";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { LuFileDown } from "react-icons/lu";
-import myResume from "./../../assets/Ariyan-Rahman-Anas-Resume.pdf";
+import me from "./../../assets/me.png";
+import sign from "./../../assets/sign.png";
+import blog from "./../../assets/blog.png";
+import project from "./../../assets/project.png";
+import arrow from "./../../assets/arrow.png";
+import myResume from "./../../assets/my-resume.pdf";
 
 const Home = () => {
   return (
@@ -21,7 +21,7 @@ const Home = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="left relative group col-span-2 flex flex-col md:flex-row items-center justify-center gap-6  bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500  rounded-lg p-5 md:p-10 h-[100%]  "
         >
@@ -61,7 +61,7 @@ const Home = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="right col-span-2 h-[100%] flex flex-col gap-8 "
         >
@@ -118,7 +118,10 @@ const Home = () => {
             <div className="div-2 group relative flex-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg h-full p-5 ">
               <div className="mb-16 lg:mb-0 ">
                 <img
-                  src={fitness}
+                  // src={
+                  //   "https://res.cloudinary.com/dkg03bek6/image/upload/v1719916027/udpfkkbco6gy3el8bt7a.png"
+                  // }
+                  src={project}
                   alt=""
                   className="rounded-lg  w-2/ mx-auto md:w-full"
                 />
@@ -147,7 +150,7 @@ const Home = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="div-1 col-span-2 group relative bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg h-full p-5 "
         >
@@ -184,11 +187,11 @@ const Home = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="div-2 col-span-2 md:col-span-1 w-full group relative bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg h-full p-5 "
         >
-          <img src={gfonts} alt="" className="w-full mb-16 " />
+          <img src={blog} alt="" className="w-full mb-16 " />
           <div className="absolute bottom-5 ">
             <h1 className="text-gray-500 font-semibold text-sm ">BLOGS</h1>
             <p className="text-2xl">GFonts</p>
@@ -203,7 +206,7 @@ const Home = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="div-3 py-10  col-span-2 md:col-span-1 w-full group relative bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg h-full p-5 "
         >
@@ -242,7 +245,7 @@ const Home = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="left  p-8 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm text-gray-500 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
         >
@@ -266,7 +269,7 @@ const Home = () => {
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
-          data-aos-duration="2000"
+          data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
           className="right group py-16 relative bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
         >

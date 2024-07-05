@@ -8,7 +8,7 @@ import DownloadMyResume from "../../Components/DownloadMyResume";
 import { useEffect, useState } from "react";
 import CredentialCard from "./CredentialCard";
 import { getData } from "../../Hooks/apiUtils";
-import Spinner from './../../Components/Spinner';
+import Spinner from "./../../Components/Spinner";
 
 const Credentials = () => {
   const [credentials, setCredentials] = useState(null);
@@ -18,18 +18,17 @@ const Credentials = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        setLoading(true)
+        setLoading(true);
         const responseData = await getData("credentials");
         setCredentials(responseData.data);
       } catch (error) {
-        setError(error)
+        setError(error);
       } finally {
         setLoading(false);
       }
-    }
+    };
     fetchData();
-  }, [])
-  
+  }, []);
 
   return (
     <div className="h-[160rem]  md:h-[100rem] ">
@@ -38,7 +37,7 @@ const Credentials = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="left p-8 w-full md:w-[30%] col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
           >
@@ -51,7 +50,7 @@ const Credentials = () => {
           <div
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
             className="right col-span-2 flex flex-col gap-5  "
           >
@@ -84,15 +83,15 @@ const Credentials = () => {
 
               <div>
                 {loading ? (
-                <Spinner />
-                  // <div className="flex items-center justify-center w-[5rem] min-h-[50vh] mx-auto ">
-                  //   <img
-                  //     src={Spinner}
-                  //     alt="Loading..."
-                  //     className="h-full w-full"
-                  //   />
-                  // </div>
-                ) : error ? (
+                  <Spinner />
+                ) : // <div className="flex items-center justify-center w-[5rem] min-h-[50vh] mx-auto ">
+                //   <img
+                //     src={Spinner}
+                //     alt="Loading..."
+                //     className="h-full w-full"
+                //   />
+                // </div>
+                error ? (
                   <h1>{error}</h1>
                 ) : (
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16 ">
