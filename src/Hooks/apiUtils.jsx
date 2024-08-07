@@ -1,8 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3001";
-// const BASE_URL = "https://dev-anas-back-end.vercel.app";
-// const BASE_URL = "https://dev-anas-back-end.vercel.app";
+// const BASE_URL = "http://localhost:3001";
+const BASE_URL = "https://dev-anas-back-end.vercel.app";
 
 // Function to fetch data
 export const getData = async (endpoint) => {
