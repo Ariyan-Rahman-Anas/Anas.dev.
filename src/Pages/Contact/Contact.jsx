@@ -53,26 +53,24 @@ const Contact = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
-          className="left col-span-2 lg:col-span-1 "
+          className="left w-full col-span-3 md:col-span-1 "
         >
           <div className="flex flex-col items-start w-full h-full justify-between gap-8 ">
-            <div>
               <h1 className="text-3xl mb-8 font-semibold mb6 text-gray-500 ">
                 Contact Info
               </h1>
-              <div className="flex flex-col gap-8">
+              <div className="flex flex-col gap-8 w-full   ">
                 <div
                   data-aos="zoom-in-up"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                   data-aos-anchor-placement="center-bottom"
-                  className="mail flex flex-col md:flex-row items-start justify-start gap-x-5 gap-y-1 "
+                  className="mail flex flex-col md:flex-row items-center gap-1 "
                 >
                   <div className="text-3xl px-5 py-3 bg-gradient-to-r from-teal-700 to-gray-950 hover:from-teal-800 hover:to-gray-800 duration-500 rounded-lg">
                     <IoMailOutline></IoMailOutline>
                   </div>
                   <div>
-                    <p className="text-gray-500">MAIL US</p>
                     <p>mohammadariyanrahmananas@gmail.com</p>
                   </div>
                 </div>
@@ -81,13 +79,12 @@ const Contact = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                   data-aos-anchor-placement="center-bottom"
-                  className="number flex flex-col md:flex-row items-start justify-start gap-x-5 gap-y-1 "
+                  className="number flex flex-col md:flex-row items-center gap-1 "
                 >
                   <div className="text-3xl px-5 py-3 bg-gradient-to-r from-teal-700 to-gray-950 hover:from-teal-800 hover:to-gray-800 duration-500 rounded-lg">
                     <MdOutlineCall></MdOutlineCall>
                   </div>
                   <div>
-                    <p className="text-gray-500">CONTACT US</p>
                     <p>+88 01610-195968</p>
                   </div>
                 </div>
@@ -96,19 +93,16 @@ const Contact = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                   data-aos-anchor-placement="center-bottom"
-                  className="location flex flex-col md:flex-row items-start justify-start gap-x-5 gap-y-1"
+                  className="location flex flex-col md:flex-row items-center gap-1"
                 >
                   <div className="text-3xl px-5 py-3 bg-gradient-to-r from-teal-700 to-gray-950 hover:from-teal-800 hover:to-gray-800 duration-500 rounded-lg">
                     <IoLocationOutline></IoLocationOutline>
                   </div>
                   <div>
-                    <p className="text-gray-500">LOCATION</p>
                     <p>Khulshi, Chattogram, Bangladesh</p>
                   </div>
                 </div>
               </div>
-            </div>
-
             <div className="w-full">
               <h1 className="text-3xl font-semibold mb-8 text-gray-500 ">
                 Social Info
@@ -129,13 +123,12 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
-          className="right relative col-span-2 p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
+          className="right relative col-span-3 md:col-span-2 p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
         >
           <div className="absolute right-5 top-0 ">
             <img src={arrow} alt="" />

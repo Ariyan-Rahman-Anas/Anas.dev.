@@ -9,6 +9,7 @@ import OfferingServices from "../Pages/Offering Services/OfferingServices";
 import CredentialsDetails from "../Pages/Credentials/CredentialsDetails";
 import ErrorPage from "../Pages/Error/ErrorPage";
 import Dashboard from "../Pages/Dashboard/Dashboard";
+import BlogsPage from "../Pages/BlogsPage/BlogsPage";
 
 const MainRoute = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const MainRoute = createBrowserRouter([
       {
         path: "offeringServices",
         element: <OfferingServices></OfferingServices>,
+      },
+      {
+        path: "blogs",
+        element: <BlogsPage></BlogsPage>,
       },
       {
         path: "contact",
