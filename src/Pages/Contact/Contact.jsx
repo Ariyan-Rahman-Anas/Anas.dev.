@@ -71,7 +71,7 @@ const Contact = () => {
                     <IoMailOutline></IoMailOutline>
                   </div>
                   <div>
-                    <p>mohammadariyanrahmananas@gmail.com</p>
+                  <a href="mailto:mohammadariyanrahmananas@gmail.com" >mohammadariyanrahmananas@gmail.com</a>
                   </div>
                 </div>
                 <div
@@ -85,7 +85,7 @@ const Contact = () => {
                     <MdOutlineCall></MdOutlineCall>
                   </div>
                   <div>
-                    <p>+88 01610-195968</p>
+                  <a href="tel:+8801610195968" >+88 01610-195968</a>
                   </div>
                 </div>
                 <div

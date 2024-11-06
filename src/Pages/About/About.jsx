@@ -11,7 +11,7 @@ import {
   FaNode,
   FaGithub,
 } from "react-icons/fa";
-import { SiTailwindcss } from "react-icons/si";
+import { SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoMongodb } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -101,9 +101,9 @@ const About = () => {
                     : Ariyan Rahman
                   </p>
                   <p className="font-semibold text-gray-100 ">: 23 years</p>
-                  <p className="font-semibold text-gray-100 ">
+                  <a href="tel:+8801610195968" className="font-semibold text-gray-100 ">
                     : +88 01610-195968
-                  </p>
+                  </a>
                   <p className="font-semibold text-gray-100 ">: mr.anas</p>
                   <p className="font-semibold text-gray-100 ">
                     : Chattogram, Bangladesh
@@ -121,9 +121,9 @@ const About = () => {
                 <div className="value flex flex-col gap-2 ">
                   <p className="font-semibold text-gray-100 ">: Anas</p>
                   <p className="font-semibold text-gray-100 ">: Available</p>
-                  <p className="font-semibold text-gray-100 ">
+                  <a href="mailto:mohammadariyanrahmananas@gmail.com" className="font-semibold text-gray-100 ">
                     : mohammadariyanrahmananas@gmail.com
-                  </p>
+                  </a>
                   <p className="font-semibold text-gray-100 ">
                     : Bengali, English, Urdu and Hindi
                   </p>
@@ -308,9 +308,33 @@ const About = () => {
             className="aos-init aos-animate"
           >
             <h1>
+              <SiTypescript />
+            </h1>
+            <p>JavaScript</p>
+          </div>
+          <div
+            data-aos="zoom-in-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="center-bottom"
+            className="aos-init aos-animate"
+          >
+            <h1>
               <FaReact></FaReact>
             </h1>
-            <p>React.JS</p>
+            <p>React</p>
+          </div>
+          <div
+            data-aos="zoom-in-up"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+            data-aos-anchor-placement="center-bottom"
+            className="aos-init aos-animate"
+          >
+            <h1>
+              <SiRedux />
+            </h1>
+            <p>Redux</p>
           </div>
           <div
             data-aos="zoom-in-up"
@@ -334,7 +358,7 @@ const About = () => {
             <h1>
               <FaNode></FaNode>
             </h1>
-            <p>Node.JS</p>
+            <p>Node.js</p>
           </div>
           <div
             data-aos="zoom-in-up"
@@ -346,7 +370,7 @@ const About = () => {
             <h1>
               <SiExpress></SiExpress>
             </h1>
-            <p>Express.JS</p>
+            <p>Express.js</p>
           </div>
           <div
             data-aos="zoom-in-up"

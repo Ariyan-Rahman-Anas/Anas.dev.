@@ -1,6 +1,5 @@
 import { TbArrowLoopRight } from "react-icons/tb";
 import { Link } from "react-router-dom";
-import myResume from "./../../../assets/my-resume.pdf";
 import { LuFileDown } from "react-icons/lu";
 import myDisplayPicture from "../../../assets/myDisplayPicture.png" 
 
@@ -27,14 +26,14 @@ export default function DisplayPicture() {
               <p className="text-gray-500 mt-3 mb-5  ">
                   I am a Web Developer based in Chattogram, Bangladesh
               </p>
-              <a
-                  href={myResume}
-                  download
-                  className="w-fit flex items-center justify-between gap-2 py-2 px-4  bg-gradient-to-l from-teal-950 to-gray-950 hover:to-teal-600  rounded-md   hover:transform hover:scale-110 duration-500 "
+              <Link
+                  to={"https://docs.google.com/document/d/1YWeEq1KsUsSCIGZ77FP-oCUZMGWiokkv-MSttlyfPV4/edit?usp=sharing"}
+                  target="_blank"
+                  className="flex w-fit text-base items-center justify-between gap-2 py-2 px-4  bg-gradient-to-r from-teal-950 to-gray-950 hover:to-teal-600  rounded-md   hover:transform hover:scale-105 duration-500 "
               >
                   Download My Resume
                   <LuFileDown></LuFileDown>
-              </a>
+              </Link>
           </div>
           <div className="absolute right-5 bottom-5 ">
               <Link

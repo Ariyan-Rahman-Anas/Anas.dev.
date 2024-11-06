@@ -1,5 +1,5 @@
 import { LuFileDown } from "react-icons/lu";
-import myResume from "./../assets/my-resume.pdf"
+import { Link } from "react-router-dom";
 
 const DownloadMyResume = () => {
   return (
@@ -9,14 +9,14 @@ const DownloadMyResume = () => {
         boxShadow: "1px 1px 3px #042f2e,-1px -1px 3px #042f2e ",
       }}
     >
-      <a
-        href={myResume}
-        download
+      <Link
+        to={"https://docs.google.com/document/d/1YWeEq1KsUsSCIGZ77FP-oCUZMGWiokkv-MSttlyfPV4/edit?usp=sharing"}
+        target="_blank"
         className="flex text-base items-center justify-between gap-2 py-2 px-4  bg-gradient-to-r from-teal-950 to-gray-950 hover:to-teal-600  rounded-md   hover:transform hover:scale-105 duration-500 "
       >
         Download My Resume
         <LuFileDown></LuFileDown>
-      </a>
+      </Link>
     </div>
   );
 };
