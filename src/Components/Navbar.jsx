@@ -104,7 +104,7 @@ const Navbar = () => {
                 <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300 "></span>
               </NavLink>
             </li>
-            <li onClick={handleHidingMenu} className="tex-white relative group">
+            {/* <li onClick={handleHidingMenu} className="tex-white relative group">
               <NavLink
                 to={"/dashboard"}
                 className={({ isActive }) =>
@@ -115,7 +115,7 @@ const Navbar = () => {
               >Dashboard
                 <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300 "></span>
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
         <div className="nav-right hidden md:block ">

@@ -11,17 +11,97 @@ import {
   FaNode,
   FaGithub,
 } from "react-icons/fa";
-import { SiRedux, SiTailwindcss, SiTypescript } from "react-icons/si";
+import {
+  SiRedux,
+  SiNextdotjs,
+  SiMongoose,
+  SiTailwindcss,
+  SiTypescript,
+  SiPostman,
+  SiExpress
+} from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoMongodb } from "react-icons/bi";
 import { IoLogoFirebase } from "react-icons/io5";
-import { SiExpress } from "react-icons/si";
 import "./about.css";
 import PageTitle from "../../Components/PageTitle";
 import MySocials from "../../Components/MySocials";
 import DownloadMyResume from "../../Components/DownloadMyResume";
 
 const About = () => {
+
+  const skills = [
+    {
+      icon: <FaHtml5 />,
+      title: "HTML",
+    },
+    {
+      icon: <FaCss3Alt />,
+      title: "CSS",
+    },
+    {
+      icon: <FaSass />,
+      title: "Sass",
+    },
+    {
+      icon: <FaBootstrap />,
+      title: "Bootstrap",
+    },
+    {
+      icon: <SiTailwindcss />,
+      title: "Tailwind",
+    },
+    {
+      icon: <IoLogoJavascript />,
+      title: "JavaScript",
+    },
+    {
+      icon: <SiTypescript />,
+      title: "TypeScript",
+    },
+    {
+      icon: <FaReact />,
+      title: "React",
+    },
+    {
+      icon: <SiNextdotjs />,
+      title: "Next",
+    },
+    {
+      icon: <SiRedux />,
+      title: "Redux",
+    },
+    {
+      icon: <FaNode />,
+      title: "Node",
+    },
+    {
+      icon: <SiExpress />,
+      title: "Express",
+    },
+    {
+      icon: <BiLogoMongodb />,
+      title: "MongoDB",
+    },
+    {
+      icon: <SiMongoose />,
+      title: "Mongoose",
+    },
+    {
+      icon: <IoLogoFirebase />,
+      title: "Firebase",
+    },
+    {
+      icon: <FaGithub />,
+      title: "GitHub",
+    },
+    {
+      icon: <SiPostman />,
+      title: "Postman",
+    },
+  ];
+
+
   return (
     <div>
       {/* top section starts from here */}
@@ -71,7 +151,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* top section ends here */}
 
       {/* personal details section is starts from here */}
       <section className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-500">
@@ -215,7 +294,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      {/* personal details section is ends here */}
 
       {/* skills section is starts from here */}
       <section
@@ -227,177 +305,23 @@ const About = () => {
         className="my-10 p-5 text-gray-500 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
       >
         <h1 className="text-3xl font-semibold mb-6  ">My Skills</h1>
-        <div className="all-skills grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <FaHtml5></FaHtml5>
-            </h1>
-            <p>HTML-5</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <FaCss3Alt></FaCss3Alt>
-            </h1>
-            <p>CSS-3</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <FaSass></FaSass>
-            </h1>
-            <p>SASS</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <FaBootstrap></FaBootstrap>
-            </h1>
-            <p>Bootstrap</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <SiTailwindcss></SiTailwindcss>
-            </h1>
-            <p>Tailwind</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <IoLogoJavascript></IoLogoJavascript>
-            </h1>
-            <p>JavaScript</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <SiTypescript />
-            </h1>
-            <p>JavaScript</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <FaReact></FaReact>
-            </h1>
-            <p>React</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <SiRedux />
-            </h1>
-            <p>Redux</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <IoLogoFirebase></IoLogoFirebase>
-            </h1>
-            <p>Firebase</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <FaNode></FaNode>
-            </h1>
-            <p>Node.js</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <SiExpress></SiExpress>
-            </h1>
-            <p>Express.js</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="aos-init aos-animate"
-          >
-            <h1>
-              <BiLogoMongodb></BiLogoMongodb>
-            </h1>
-            <p>MongoDB</p>
-          </div>
-          <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-          >
-            <h1>
-              <FaGithub></FaGithub>
-            </h1>
-            <p>GitHub</p>
-          </div>
+        <div className="all-skills grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {
+            skills?.map((item, index) => <div
+              key={index}
+              data-aos="zoom-in-up"
+              data-aos-easing="ease-out-cubic"
+              data-aos-duration="1000"
+              data-aos-anchor-placement="center-bottom"
+              className="aos-init aos-animate py-4 " >
+              <h1>
+               {item.icon}
+              </h1>
+              <p>{item.title} </p>
+            </div> )
+          }
         </div>
       </section>
-      {/* skills section is ends here */}
     </div>
   );
 };
