@@ -107,7 +107,7 @@ const About = () => {
       {/* top section starts from here */}
       <section
         id="media-and-top-info"
-        className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-8"
+        className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-4"
       >
         {/* Ariyan Rahman Anas's cover img */}
         <div
@@ -115,9 +115,9 @@ const About = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
-          className="left p-6 w-full col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
+          className="p-4 w-full col-span-2 md:col-span-1 section-grant-left rounded-lg"
         >
-          <img src={cover} alt="" className="rounded-lg" />
+          <img src={cover} alt="Ariyan Rahman Anas" className="w-full h-full rounded-lg" />
         </div>
 
         {/* Ariyan Rahman Anas's basic info */}
@@ -126,16 +126,14 @@ const About = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
-          className="right col-span-2 flex flex-col gap-5  "
+          className="col-span-2 flex flex-col justify-between gap-4  "
         >
           <PageTitle title={"SELF-SUMMARY"}></PageTitle>
-          <div className="down px-8 pb-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg">
-            <img src={arrow} alt="" />
+          <div className="down px-8 pb-4 section-grant-left duration-500 rounded-lg">
+            <img src={arrow} alt="name indicator" />
             <h1 className="text-4xl font-semibold mt-5">Ariyan Rahman Anas</h1>
-            <p className="mt-3 text-gray-400">
-              I am a Bangladesh-based Front-End Web Developer with a focus on
-              Back-End Development. I have a diverse range of experience having
-              worked across various fields and industries.
+            <p className="mt-3 text-gray-300">
+              I am a Bangladesh-based Full Stack Developer. I have a diverse range of experience having worked across various fields and industries.
             </p>
 
             {/* social media and resume btn */}
@@ -153,58 +151,60 @@ const About = () => {
       </section>
 
       {/* personal details section is starts from here */}
-      <section className="my-10 grid grid-cols-1 lg:grid-cols-2 gap-8 text-gray-500">
+      <section className="my-4 grid grid-cols-1 lg:grid-cols-2 gap-4 text-gray-200">
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
-          className="left text-xs 2xl:text-base px-2 py-5 md:p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
+          className="section-grant-left text-sm p-4 space-y-4 rounded-lg"
         >
           {/* personal information */}
-          <div>
-            <h1 className="text-3xl font-semibold mb-6  ">
+          <div className="space-y-4">
+            <h1 className="text-3xl font-semibold">
               Personal Information
             </h1>
-            <div className="flex flex-col md:flex-row items-start justify-between gap-2 rounded-lg p-4 bg-gradient-to-l from-teal-950 hover:bg-gradient-to-r hover:from-teal-950 to-gray-900 hover:to-gray-950 duration-500">
-              <div className="left flex gap-1 ">
-                <div className="title flex flex-col gap-2 ">
-                  <p>First Name</p>
+
+            <div className="rounded-lg p-4 section-grant-right">
+              <div className="flex items-center gap-6">
+                <div className="flex flex-col gap-2 w-[5rem]">
+                  <p>Name</p>
                   <p>Age</p>
                   <p>Phone</p>
-                  <p>Skype</p>
-                  <p>Address</p>
+                  <p>Email</p>
                 </div>
                 <div className="value flex flex-col gap-2 ">
                   <p className="font-semibold text-gray-100 ">
-                    : Ariyan Rahman
+                    : Ariyan Rahman Anas
                   </p>
-                  <p className="font-semibold text-gray-100 ">: 23 years</p>
+                  <p className="font-semibold text-gray-100 ">: 24 years</p>
                   <a href="tel:+8801610195968" className="font-semibold text-gray-100 ">
                     : +88 01610-195968
                   </a>
-                  <p className="font-semibold text-gray-100 ">: mr.anas</p>
-                  <p className="font-semibold text-gray-100 ">
-                    : Chattogram, Bangladesh
-                  </p>
+
+                  <a href="mailto:anas.hllw@gmail.com" className="font-semibold text-gray-100 ">
+                    : anas.hllw@gmail.com
+                  </a>
                 </div>
               </div>
-              <div className="right flex gap-1">
-                <div className="title flex flex-col gap-2 ">
-                  <p>Last Name</p>
+            </div>
+
+
+            <div className="rounded-lg p-4 section-grant-right ">
+              <div className="flex gap-6">
+                <div className="title flex flex-col gap-2 w-[5rem] ">
                   <p>Freelance</p>
-                  <p>Email</p>
                   <p>Languages</p>
+                  <p>Address</p>
                   <p>Nationality</p>
                 </div>
                 <div className="value flex flex-col gap-2 ">
-                  <p className="font-semibold text-gray-100 ">: Anas</p>
                   <p className="font-semibold text-gray-100 ">: Available</p>
-                  <a href="mailto:mohammadariyanrahmananas@gmail.com" className="font-semibold text-gray-100 ">
-                    : mohammadariyanrahmananas@gmail.com
-                  </a>
                   <p className="font-semibold text-gray-100 ">
-                    : Bengali, English, Urdu and Hindi
+                    : Bengali, English, and Hindi
+                  </p>
+                  <p className="font-semibold text-gray-100 ">
+                    : Chattogram, Bangladesh
                   </p>
                   <p className="font-semibold text-gray-100 ">: Bangladeshi</p>
                 </div>
@@ -213,7 +213,7 @@ const About = () => {
           </div>
 
           {/* Ariyan Rahman Anas's basic info again here for medium to large devices */}
-          <div className="social-icons-resume-download hidden mt-0 md:mt-12 mb-12 md:flex flex-col md:flex-row items-center justify-between gap-5 ">
+          <div className="social-icons-resume-download hidden mt-0 md:mt12 mb12 md:flex flex-col md:flex-row items-center justify-between gap-5 ">
             {/* <MySocials></MySocials> */}
             <MySocials
               fb={<FaFacebookF></FaFacebookF>}
@@ -231,20 +231,17 @@ const About = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
-          className="right text-xs 2xl:text-base px-2 py-5 md:p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
+          className="section-grant-left text-sm p-4 space-y-4 rounded-lg"
         >
-          <h1 className="text-3xl font-semibold mb-5 ">
+          <h1 className="text-3xl font-semibold">
             Educational Qualifications
           </h1>
-          <div className="flex flex-col gap-5">
-            <div className="diploma flex flex-col items-start justify-start gap-1 rounded-lg p-4 bg-gradient-to-l from-teal-950 to-gray-900 hover:bg-gradient-to-r hover:from-teal-950 hover:to-gray-950 duration-500">
-              <div>
+          <div className="section-grant-right flex flex-col items-start justify-start rounded-lg p-4">
                 <h1 className="text-gray-100 font-light text-xl border-b-[.09rem] mb-3 ">
                   Diploma in Engineering
                 </h1>
-              </div>
               <div>
-                <div className="flex gap-x-5">
+                <div className="flex gap-6">
                   <div className="key flex flex-col gap-2 ">
                     <p>Department</p>
                     <p>Institute</p>
@@ -273,9 +270,10 @@ const About = () => {
                 </h1>
               </div>
               <div>
-                <div className="flex gap-x-2 ">
+                <div className="flex items-center  gap-6 ">
                   <div className="key flex flex-col gap-2 ">
                     <p>Institute</p>
+                    <p>Semester</p>
                     <p>Duration</p>
                     <p>Year of Pass</p>
                   </div>
@@ -284,14 +282,16 @@ const About = () => {
                       : Baitush Sharaf Ideal kamil (M.A) Madrasah
                     </p>
                     <p className="font-semibold text-gray-100">
-                      : 2 Years-4 Semester
+                      : 4 Semester
+                    </p>
+                    <p className="font-semibold text-gray-100">
+                      : 2 Years
                     </p>
                     <span className="font-semibold text-gray-100">: 2019</span>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
@@ -302,7 +302,7 @@ const About = () => {
         data-aos-easing="ease-out-cubic"
         data-aos-duration="1000"
         data-aos-anchor-placement="center-bottom"
-        className="my-10 p-5 text-gray-500 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
+        className="section-grant-left my-4 p-4 text-gray-200 rounded-lg"
       >
         <h1 className="text-3xl font-semibold mb-6  ">My Skills</h1>
         <div className="all-skills grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
@@ -315,10 +315,10 @@ const About = () => {
               data-aos-anchor-placement="center-bottom"
               className="aos-init aos-animate py-4 " >
               <h1>
-               {item.icon}
+                {item.icon}
               </h1>
               <p>{item.title} </p>
-            </div> )
+            </div>)
           }
         </div>
       </section>

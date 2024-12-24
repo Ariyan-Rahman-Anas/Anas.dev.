@@ -2,8 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+.font-bruno{
+  font-family: "Bruno Ace", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 html {
   scroll-behavior: smooth;
+}
+
+.section-grant-left{
+  @apply bg-gradient-to-r from-teal-900 to-gray-900 hover:to-gray-800
+}
+
+.section-grant-right{
+  @apply bg-gradient-to-l from-teal-950 hover:bg-gradient-to-r hover:from-teal-950 to-gray-900 hover:to-gray-950
+}
+
+.btn{
+  @apply py-2 px-4  bg-gradient-to-r from-teal-950 font-semibold to-teal-600 hover:from-teal-600
 }
 
 /*====--- custom scroll bar ---====*/

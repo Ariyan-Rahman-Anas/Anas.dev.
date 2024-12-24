@@ -8,19 +8,19 @@ import WorkTogether from "./components/WorkTogether";
 
 const Home = () => {
   return (
-    <div>
+    <div className="space-y-20">
       {/* 1st section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:h-[25rem] w-full py-10   ">
+      <section className="">
         <DisplayPicture />
-        <ProjectsAndCredentials />
+        {/* <ProjectsAndCredentials /> */}
       </section>
 
       {/* 2nd section */}
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 md:mt-0 ">
+      {/* <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-8 md:mt-0 ">
         <Services/>
         <Blogs/>
         <Profiles/>
-      </section>
+      </section> */}
 
       {/* 3rd section */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 h-[15m] mt-10  ">

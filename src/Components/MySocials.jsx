@@ -1,10 +1,7 @@
 const MySocials = ({fb, linkedin, gh}) => {
     return (
       <div
-        className=" social-icons w-full flex items-center justify-center gap-10 text-xl p-4 text-gray-100 rounded-lg  bg-gradient-to-l from-teal-950 to-gray-900 hover:to-gray-950 duration-500"
-        style={{
-          boxShadow: "1px 1px 3px #042f2e,-1px -1px 3px #042f2e ",
-        }}
+        className=" social-icons w-full flex items-center justify-center gap-10 text-xl p-4 text-gray-100 rounded-lg section-grant-right "
       >
         <a
           href="https://www.facebook.com/ariyanrahmananas69/"
