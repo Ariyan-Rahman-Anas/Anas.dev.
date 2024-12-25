@@ -25,7 +25,7 @@ const ProjectCard = ({ project }) => {
         <Link
           to={frontCode}
           target="_blank"
-          className="flex items-center gap-1 px-3 py-1 bg-gradient-to-t from-teal-700 to-gray-800 rounded-full hover:text-gray-900 hover:bg-gradient-to-t hover:from-teal-400 hover:to-gray-100 duration-500  "
+          className="flex items-center gap-1 px-3 py-1 section-grant-left  rounded-full hover:text-gray-900 hover:bg-gradient-to-t hover:from-teal-500 hover:to-gray-200 duration-500  "
         >
           {" "}
           <FaGithub /> <span>Client</span>
@@ -33,7 +33,7 @@ const ProjectCard = ({ project }) => {
         <Link
           to={backCode}
           target="_blank"
-          className="flex items-center gap-1 px-3 py-1 bg-gradient-to-t from-teal-700 to-gray-800 rounded-full hover:text-gray-900 hover:bg-gradient-to-t hover:from-teal-400 hover:to-gray-100 duration-500  "
+          className="flex items-center gap-1 px-3 py-1 section-grant-left rounded-full hover:text-gray-900 hover:bg-gradient-to-t hover:from-teal-500 hover:to-gray-200 duration-500  "
         >
           {" "}
           <FaGithub /> <span>Server </span>
@@ -41,16 +41,16 @@ const ProjectCard = ({ project }) => {
         <Link
           to={liveLink}
           target="_blank"
-          className="flex items-center gap-1 px-3 py-1 bg-gradient-to-t from-teal-700 to-gray-800 rounded-full hover:text-gray-900 hover:bg-gradient-to-t hover:from-teal-400 hover:to-gray-100 duration-500  "
+          className="flex items-center gap-1 px-3 py-1 section-grant-left rounded-full hover:text-gray-900 hover:bg-gradient-to-t hover:from-teal-500 hover:to-gray-200 duration-500  "
         >
           {" "}
           <CgWebsite /> <span>Explore</span>
         </Link>
       </div>
-      <div className="z-10 text-xs bg-[#0f0f0f] bg-opacity-80 w-full h-full flex items-center justify-center absolute bottom-0 invisible group-hover:visible duration-75">
+      <div className="z-10 text-xs bg-[#0f0f0f] bg-opacity-95 w-full h-full flex items-center justify-center absolute bottom-0 invisible group-hover:visible">
         <div className="text-center mb-8 ">
-          <h1 className="text-lg font-semibold ">{title}</h1>
-          <p className="text-gray-400 px-2 ">{details}</p>
+          <h1 className="text-lg font-semibold text-gray-100 ">{title}</h1>
+          <p className="text-gray-200 px-2 ">{details}</p>
         </div>
       </div>
     </div>
