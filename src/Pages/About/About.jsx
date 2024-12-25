@@ -144,7 +144,7 @@ const About = () => {
                 gh={<LuGithub></LuGithub>}
               ></MySocials>
 
-              <DownloadMyResume></DownloadMyResume>
+              <DownloadMyResume />
             </div>
           </div>
         </div>
@@ -221,7 +221,7 @@ const About = () => {
               gh={<LuGithub></LuGithub>}
             ></MySocials>
 
-            <DownloadMyResume></DownloadMyResume>
+            <DownloadMyResume />
           </div>
         </div>
 

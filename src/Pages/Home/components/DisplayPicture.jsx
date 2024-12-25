@@ -4,6 +4,8 @@ import myDisplayPicture from "../../../assets/me.png"
 import RoutingIndicator from "./RoutingIndicator";
 
 export default function DisplayPicture() {
+    const resume = import.meta.env.VITE_RESUME
+
     return (
         <div
             data-aos="zoom-in-up"
@@ -34,7 +36,7 @@ export default function DisplayPicture() {
                     <h2 className="text-3xl md:text-5xl font-bold mt-4 text-gray-200 ">A Full Stack Developer.</h2>
                     <p className="text-s leading-7 tracking-wide my-5 ">Experienced full stack developer with 1.8+ years of expertise in building pixel-perfect, responsive web applications using modern technologies. Proficient in both frontend and backend development, including creating serverless full stack solutions with Next.js. Fluent in English, quick to respond, a team person and committed to delivering projects on time.</p>
                     <Link
-                        to={"https://drive.google.com/file/d/1FnRv5n_ywVeM0s6o0hERwF1_XX7y_uJO/view?usp=sharing"}
+                        to={resume}
                         target="_blank"
                         className="w-fit flex items-center justify-between gap-2 rounded-md hover:transform hover:scale-105 duration-500 btn"
                     >

@@ -44,10 +44,11 @@ const Contact = () => {
         }
       );
   };
+  
 
   return (
-    <div className="mt-20">
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-16 ">
+    <div className="mt-4">
+      <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
         <div
           data-aos="zoom-in-up"
           data-aos-easing="ease-out-cubic"
@@ -55,23 +56,24 @@ const Contact = () => {
           data-aos-anchor-placement="center-bottom"
           className="left w-full col-span-3 md:col-span-1 "
         >
-          <div className="flex flex-col items-start w-full h-full justify-between gap-8 ">
-              <h1 className="text-3xl mb-8 font-semibold mb6 text-gray-500 ">
+          <div className="flex flex-col items-start w-full h-full justify-between ">
+            <div className="space-y-6 section-grant-left w-full p-4 rounded-lg ">
+              <h1 className="text-3xl font-semibold text-gray-200 ">
                 Contact Info
               </h1>
-              <div className="flex flex-col gap-8 w-full   ">
+              <div className="flex flex-col gap-4 w-full   ">
                 <div
                   data-aos="zoom-in-up"
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                   data-aos-anchor-placement="center-bottom"
-                  className="mail flex flex-col md:flex-row items-center gap-1 "
+                  className="mail flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-500 "
                 >
-                  <div className="text-3xl px-5 py-3 bg-gradient-to-r from-teal-700 to-gray-950 hover:from-teal-800 hover:to-gray-800 duration-500 rounded-lg">
+                  <div className="text-3xl px-5 py-3 section-grant-right rounded-l-lg">
                     <IoMailOutline></IoMailOutline>
                   </div>
                   <div>
-                  <a href="mailto:mohammadariyanrahmananas@gmail.com" >mohammadariyanrahmananas@gmail.com</a>
+                    <a href="mailto:anas.hllw@gmail.com" >anas.hllw@gmail.com</a>
                   </div>
                 </div>
                 <div
@@ -79,13 +81,13 @@ const Contact = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                   data-aos-anchor-placement="center-bottom"
-                  className="number flex flex-col md:flex-row items-center gap-1 "
+                  className="number flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-500 "
                 >
-                  <div className="text-3xl px-5 py-3 bg-gradient-to-r from-teal-700 to-gray-950 hover:from-teal-800 hover:to-gray-800 duration-500 rounded-lg">
+                  <div className="text-3xl px-5 py-3 section-grant-right rounded-l-lg">
                     <MdOutlineCall></MdOutlineCall>
                   </div>
                   <div>
-                  <a href="tel:+8801610195968" >+88 01610-195968</a>
+                    <a href="tel:+8801610195968" >+88 01610-195968</a>
                   </div>
                 </div>
                 <div
@@ -93,9 +95,9 @@ const Contact = () => {
                   data-aos-easing="ease-out-cubic"
                   data-aos-duration="1000"
                   data-aos-anchor-placement="center-bottom"
-                  className="location flex flex-col md:flex-row items-center gap-1"
+                  className="location flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-500"
                 >
-                  <div className="text-3xl px-5 py-3 bg-gradient-to-r from-teal-700 to-gray-950 hover:from-teal-800 hover:to-gray-800 duration-500 rounded-lg">
+                  <div className="text-3xl px-5 py-3 section-grant-right rounded-l-lg">
                     <IoLocationOutline></IoLocationOutline>
                   </div>
                   <div>
@@ -103,8 +105,9 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            <div className="w-full">
-              <h1 className="text-3xl font-semibold mb-8 text-gray-500 ">
+              </div>
+            <div className="space-y-6 section-grant-left w-full p-4 rounded-lg ">
+              <h1 className="text-3xl font-semibold text-gray-200 ">
                 Social Info
               </h1>
               <div
@@ -128,7 +131,7 @@ const Contact = () => {
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000"
           data-aos-anchor-placement="center-bottom"
-          className="right relative col-span-3 md:col-span-2 p-5 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
+          className="right relative col-span-3 md:col-span-2 p-5 section-grant-left rounded-lg"
         >
           <div className="absolute right-5 top-0 ">
             <img src={arrow} alt="" />
