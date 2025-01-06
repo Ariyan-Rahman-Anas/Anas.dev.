@@ -103,7 +103,7 @@ const About = () => {
 
 
   return (
-    <div>
+    <div className="space-y-4" >
       {/* top section starts from here */}
       <section
         id="media-and-top-info"
@@ -146,6 +146,22 @@ const About = () => {
 
               <DownloadMyResume />
             </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-4" >
+        <div className="col-span-12 md:col-span-7" >
+
+
+        </div>
+        <div className="col-span-12 md:col-span-5 relative " >
+          <h1 className="transform -rotate-90 absolute -left-20 bottom-44 right- font-semibold  text-3xl ">{`Let's Get Introduced`}</h1>
+          <div className="flex items-center justify-end">
+            <iframe className="w-fit h-full min-h-[70vh] min-w-max"
+              src="https://player.vimeo.com/video/1044393508?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Ariyan Rahman Anas">
+            </iframe>
           </div>
         </div>
       </section>
@@ -237,61 +253,61 @@ const About = () => {
             Educational Qualifications
           </h1>
           <div className="section-grant-right flex flex-col items-start justify-start rounded-lg p-4">
-                <h1 className="text-gray-100 font-light text-xl border-b-[.09rem] mb-3 ">
-                  Diploma in Engineering
-                </h1>
-              <div>
-                <div className="flex gap-6">
-                  <div className="key flex flex-col gap-2 ">
-                    <p>Department</p>
-                    <p>Institute</p>
-                    <p>Duration</p>
-                    <p>Year of Pass</p>
-                  </div>
-                  <div className="value flex flex-col gap-2">
-                    <p className="font-semibold text-gray-100">
-                      : Computer Science and Technology
-                    </p>
-                    <p className="font-semibold text-gray-100">
-                      : Chattogram Polytechnic Institute
-                    </p>
-                    <p className="font-semibold text-gray-100">
-                      : 4 Years, 8 Semester
-                    </p>
-                    <p className="font-semibold text-gray-100">: 2023</p>
-                  </div>
+            <h1 className="text-gray-100 font-light text-xl border-b-[.09rem] mb-3 ">
+              Diploma in Engineering
+            </h1>
+            <div>
+              <div className="flex gap-6">
+                <div className="key flex flex-col gap-2 ">
+                  <p>Department</p>
+                  <p>Institute</p>
+                  <p>Duration</p>
+                  <p>Year of Pass</p>
+                </div>
+                <div className="value flex flex-col gap-2">
+                  <p className="font-semibold text-gray-100">
+                    : Computer Science and Technology
+                  </p>
+                  <p className="font-semibold text-gray-100">
+                    : Chattogram Polytechnic Institute
+                  </p>
+                  <p className="font-semibold text-gray-100">
+                    : 4 Years, 8 Semester
+                  </p>
+                  <p className="font-semibold text-gray-100">: 2023</p>
                 </div>
               </div>
             </div>
-            <div className="dakhil flex-col flex items-start justify-start gap-1 rounded-lg p-4 bg-gradient-to-l from-teal-950 hover:bg-gradient-to-r hover:from-teal-950 to-gray-900 hover:to-gray-950 duration-500">
-              <div>
-                <h1 className="text-gray-100 font-light text-xl border-b-[.09rem] mb-3 ">
-                  Secondary School Certificate (SSC)
-                </h1>
-              </div>
-              <div>
-                <div className="flex items-center  gap-6 ">
-                  <div className="key flex flex-col gap-2 ">
-                    <p>Institute</p>
-                    <p>Semester</p>
-                    <p>Duration</p>
-                    <p>Year of Pass</p>
-                  </div>
-                  <div className="value flex flex-col gap-2 ">
-                    <p className="font-semibold text-gray-100">
-                      : Baitush Sharaf Ideal kamil (M.A) Madrasah
-                    </p>
-                    <p className="font-semibold text-gray-100">
-                      : 4 Semester
-                    </p>
-                    <p className="font-semibold text-gray-100">
-                      : 2 Years
-                    </p>
-                    <span className="font-semibold text-gray-100">: 2019</span>
-                  </div>
+          </div>
+          <div className="dakhil flex-col flex items-start justify-start gap-1 rounded-lg p-4 bg-gradient-to-l from-teal-950 hover:bg-gradient-to-r hover:from-teal-950 to-gray-900 hover:to-gray-950 duration-500">
+            <div>
+              <h1 className="text-gray-100 font-light text-xl border-b-[.09rem] mb-3 ">
+                Secondary School Certificate (SSC)
+              </h1>
+            </div>
+            <div>
+              <div className="flex items-center  gap-6 ">
+                <div className="key flex flex-col gap-2 ">
+                  <p>Institute</p>
+                  <p>Semester</p>
+                  <p>Duration</p>
+                  <p>Year of Pass</p>
+                </div>
+                <div className="value flex flex-col gap-2 ">
+                  <p className="font-semibold text-gray-100">
+                    : Baitush Sharaf Ideal kamil (M.A) Madrasah
+                  </p>
+                  <p className="font-semibold text-gray-100">
+                    : 4 Semester
+                  </p>
+                  <p className="font-semibold text-gray-100">
+                    : 2 Years
+                  </p>
+                  <span className="font-semibold text-gray-100">: 2019</span>
                 </div>
               </div>
             </div>
+          </div>
         </div>
       </section>
 
