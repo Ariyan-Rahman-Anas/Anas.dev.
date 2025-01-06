@@ -56,7 +56,7 @@ const Contact = () => {
           data-aos-anchor-placement="center-bottom"
           className="left w-full col-span-3 md:col-span-1 "
         >
-          <div className="flex flex-col items-start w-full h-full justify-between ">
+          <div className="flex flex-col items-start w-full h-full justify-between gap-4 ">
             <div className="space-y-6 section-grant-left w-full p-4 rounded-lg ">
               <h1 className="text-3xl font-semibold text-gray-200 ">
                 Contact Info

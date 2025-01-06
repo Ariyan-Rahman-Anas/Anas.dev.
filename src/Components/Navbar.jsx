@@ -37,7 +37,7 @@ const Navbar = () => {
                     : "border-b-2 border-b-transparent text-gray-200 duration-500 flex items-center gap-1 relative "
                 }
               >
-                <span className="text-primary md:text-white" >{icon}</span> <span className="hidden md:block">{title}</span>
+                <span className="text-primary md:text-white text-xl md:text-base">{icon}</span> <span className="hidden md:block">{title}</span>
                 <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-primary md:bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300"></span>
               </NavLink>
             </li>

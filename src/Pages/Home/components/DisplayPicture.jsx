@@ -20,7 +20,7 @@ export default function DisplayPicture() {
                     <img
                         src={myDisplayPicture}
                         alt="Ariyan Rahman Anas"
-                        className="w-full h-full rounded-ee-[20rem] rounded-xl border-primary border-b-[.2rem] border-dashed"
+                        className="w-full h-full rounded-ee-[16rem] rounded-xl border-primary border-b-[.25rem] border-dashed"
                     />
                 </div>
             </div>
