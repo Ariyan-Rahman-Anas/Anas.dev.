@@ -3,12 +3,15 @@ import { AiOutlineHome } from "react-icons/ai";
 import { TiInfoLarge } from "react-icons/ti";
 import { GoProject } from "react-icons/go";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
+import { TbCertificate } from "react-icons/tb";
+
 
 const Navbar = () => {
   const navItems = [
     { title: "Home", link: "", icon: <AiOutlineHome /> },
     { title: "About", link: "about", icon: <TiInfoLarge /> },
     { title: "Projects", link: "projects", icon: <GoProject /> },
+    { title: "Credentials", link: "credentials", icon: <TbCertificate /> },
     { title: "Contact", link: "contact", icon: <MdOutlinePhoneInTalk /> },
   ];
 
@@ -38,7 +41,7 @@ const Navbar = () => {
                 }
               >
                 <span className="text-primary md:text-white text-2xl md:text-base">{icon}</span> <span className="hidden md:block">{title}</span>
-                <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-primary md:bg-white transform scale-x-0 origin-bottom transition-transform group-hover:scale-x-100 duration-300"></span>
+                <span className="absolute left-0 right-0 bottom-0 top-[1.35rem] h-[.14rem] w-full rounded-md bg-primary md:bg-white transform scale-x-0 origin-bottom transition-transform md:group-hover:scale-x-100 duration-300"></span>
               </NavLink>
             </li>
           ))}

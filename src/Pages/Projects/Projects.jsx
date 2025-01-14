@@ -14,8 +14,8 @@ const Projects = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const responseData = await getData("projects");
-        setProjects(responseData.data);
+        const responseData = await getData("projects/all");
+        setProjects(responseData?.projects);
       } catch (error) {
         setError(error);
       } finally {

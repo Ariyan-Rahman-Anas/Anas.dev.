@@ -1,7 +1,8 @@
 import axios from "axios";
 
-// const BASE_URL = "http://localhost:3001";
-const BASE_URL = "https://dev-anas-back-end.vercel.app";
+
+// const BASE_URL = "http://localhost:3001/api";
+const BASE_URL = "https://dev-anas-back-end.vercel.app/api";
 
 // Function to fetch data
 export const getData = async (endpoint) => {
@@ -14,16 +15,6 @@ export const getData = async (endpoint) => {
   }
 };
 
-// Function to get users by role
-export const getUsersByRole = async (role) => {
-  try {
-    const response = await axios.get(`${BASE_URL}/users/role/${role}`);
-    return response.data;
-  } catch (error) {
-    console.error(`Error fetching users with role ${role}:`, error);
-    throw error;
-  }
-};
 
 //postData
 export const postData = async (endpoint, data) => {

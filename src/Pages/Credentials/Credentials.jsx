@@ -19,8 +19,8 @@ const Credentials = () => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const responseData = await getData("credentials");
-        setCredentials(responseData.data);
+        const responseData = await getData("credentials/all");
+        setCredentials(responseData.credentials);
       } catch (error) {
         setError(error);
       } finally {
