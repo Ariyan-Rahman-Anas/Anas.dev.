@@ -1,16 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
 import { AiOutlineHome } from "react-icons/ai";
 import { TiInfoLarge } from "react-icons/ti";
-import { GoProject } from "react-icons/go";
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { TbCertificate } from "react-icons/tb";
+import { IoBriefcaseOutline } from "react-icons/io5";
+
+
 
 
 const Navbar = () => {
   const navItems = [
     { title: "Home", link: "", icon: <AiOutlineHome /> },
     { title: "About", link: "about", icon: <TiInfoLarge /> },
-    { title: "Projects", link: "projects", icon: <GoProject /> },
+    { title: "Projects", link: "projects", icon: <IoBriefcaseOutline />},
     { title: "Credentials", link: "credentials", icon: <TbCertificate /> },
     { title: "Contact", link: "contact", icon: <MdOutlinePhoneInTalk /> },
   ];
