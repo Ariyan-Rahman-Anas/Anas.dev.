@@ -47,7 +47,6 @@ const Projects = () => {
   }, []);
 
   if (loading) return <Spinner />;
-  // if (error) return <div>Error: {error.message}</div>;
 
   // Filter projects based on the active tab
   const filteredProjects = projects.filter(

@@ -12,12 +12,13 @@ const ProjectCard = ({ project }) => {
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-anchor-placement="center-bottom"
-      className="div-1 relative group max-h[40vh] border w-full section-grant-left border-transparent hover:border-gray-400 h-full  rounded-lg overflow-hidden hover:transform hover:scale-110 duration-500 pb-16 "
+      className="relative group border-2 w-full section-grant-left border-transparent hover:border-gray-200 h-full rounded-lg overflow-hidden hover:transform hover:scale-110 duration-500 pb-16 "
     >
-      <div>
+      <div className="overflow-hidden">
         <img
           src={image}
           alt={name}
+          loading="lazy"
           className="w-full h-full rounded-t-lg group-hover:transform group-hover:scale-125 duration-500 "
         />
       </div>
@@ -54,10 +55,10 @@ const ProjectCard = ({ project }) => {
       <div className="px-4">
         <h1 className="text-xl font-semibold text-gray-100 mt-2 ">{name}</h1>
 
-        <div className="text-sm space-y-2 mt-2">
-          <div className="flex items-start">
+        <div className="space-y-4 mt-2">
+          <div className="flex items-start gap-3">
             <h3 className="font-semibold underline underline-offset-2 min-w-fit" >Client tech: </h3>
-            <div className="flex items-center flex-wrap">
+            <div className="flex items-center flex-wrap gap-2">
               {
                 frontTech &&
                 frontTech
@@ -65,7 +66,7 @@ const ProjectCard = ({ project }) => {
                   .map((tech, index) => (
                     <p
                       key={index}
-                      className="text-sm px-2"
+                      className="text-sm px-3 font-semibold py-1 section-grant-right rounded-md"
                     >
                       {tech.trim()}
                     </p>
@@ -75,9 +76,9 @@ const ProjectCard = ({ project }) => {
           </div>
 
           {
-            backCode && backTech && <div className="flex items-start ">
+            backCode && backTech && <div className="flex items-start gap-3 ">
               <h3 className="font-semibold underline underline-offset-2 min-w-fit">Server tech: </h3>
-              <div className="flex flex-wrap items-start gap- ">
+              <div className="flex flex-wrap items-start gap-2 ">
                 {
                   backTech &&
                   backTech
@@ -85,7 +86,7 @@ const ProjectCard = ({ project }) => {
                     .map((tech, index) => (
                       <p
                         key={index}
-                        className="text-sm px-2 py-0.5"
+                        className="text-sm px-3 font-semibold py-1 section-grant-right rounded-md"
                       >
                         {tech.trim()}
                       </p>
