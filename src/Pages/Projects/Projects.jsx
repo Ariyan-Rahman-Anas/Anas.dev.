@@ -5,6 +5,7 @@ import Spinner from "../../Components/Spinner";
 import ProjectCard from "../../Components/ProjectCard";
 import cover from "./../../assets/myCover.jpeg";
 import arrow from "./../../assets/arrow.png";
+import { TbFaceIdError } from "react-icons/tb";
 
 const Projects = () => {
   const [categories, setCategories] = useState([]);
@@ -46,7 +47,7 @@ const Projects = () => {
   }, []);
 
   if (loading) return <Spinner />;
-  if (error) return <div>Error: {error.message}</div>;
+  // if (error) return <div>Error: {error.message}</div>;
 
   // Filter projects based on the active tab
   const filteredProjects = projects.filter(
@@ -97,56 +98,65 @@ const Projects = () => {
         </div>
       </section>
 
-      <section
-        data-aos="zoom-in-up"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="1000"
-        data-aos-anchor-placement="center-bottom"
-        className="right w-full border2 flex flex-col gap-8"
-      >
-        <div className="w-full mt-10">
-          {/* Tab Headers */}
-          <div className="flex borderb border-gray-200 relative">
-            {categories?.map((category, idx) => (
-              <button
-                key={idx}
-                onClick={() => setActiveTab(category)}
-                className={`flex-1 text-center py-2 font-medium transition-colors duration-300 ${activeTab === category
+      {
+        categories && projects && <section
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom"
+          className="right w-full border2 flex flex-col gap-8"
+        >
+          <div className="w-full mt-10">
+            {/* Tab Headers */}
+            <div className="flex borderb border-gray-200 relative">
+              {categories?.map((category, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => setActiveTab(category)}
+                  className={`flex-1 text-center py-2 font-medium transition-colors duration-300 ${activeTab === category
                     ? "text-teal-500"
                     : "text-gray-300 hover:text-teal-500"
-                  }`}
-              >
-                {category}
-              </button>
-            ))}
+                    }`}
+                >
+                  {category}
+                </button>
+              ))}
 
-            {/* Indicator for Active Tab */}
-            <div
-              className="absolute bottom-0 h-[2px] bg-teal-500 rounded-full transition-all duration-500"
-              style={{
-                width: `${100 / categories.length}%`,
-                transform: `translateX(${categories.findIndex((cat) => cat === activeTab) * 100
-                  }%)`,
-              }}
-            ></div>
-          </div>
-
-          {/* Tab Content */}
-          <div className="relative mt-4 min-h-screen grid grid-cols-1 md:grid-cols-3 gap-4 ">
-            {filteredProjects.map((project) => (
+              {/* Indicator for Active Tab */}
               <div
-                key={project?._id}
-                className="transition-opacity duration-500 opacity-100"
-              >
-                <ProjectCard project={project} />
-              </div>
-            ))}
-            {filteredProjects.length === 0 && (
-              <p className="text-gray-500 mt-5">No projects in this category.</p>
-            )}
+                className="absolute bottom-0 h-[2px] bg-teal-500 rounded-full transition-all duration-500"
+                style={{
+                  width: `${100 / categories.length}%`,
+                  transform: `translateX(${categories.findIndex((cat) => cat === activeTab) * 100
+                    }%)`,
+                }}
+              ></div>
+            </div>
+
+            {/* Tab Content */}
+            <div className="relative mt-4 minh-screen grid grid-cols-1 md:grid-cols-3 gap-4 ">
+              {filteredProjects.map((project) => (
+                <div
+                  key={project?._id}
+                  className="transition-opacity duration-500 opacity-100"
+                >
+                  <ProjectCard project={project} />
+                </div>
+              ))}
+            </div>
           </div>
+        </section>
+      }
+      
+      {
+        error && <div className="border-2 border-dashed rounded-lg border-gray-500 w-full md:w-fit mx-auto p-4 flex flex-col items-center justify-center ">
+          <TbFaceIdError size={35}  />
+          <h1 className="font-bold text-4xl">Oops!</h1>
+          <p className="mt-4" >Something went wrong while fetching data.</p>
+          <p>Please try again later.</p>
         </div>
-      </section>
+      }
+
     </div>
   );
 };
