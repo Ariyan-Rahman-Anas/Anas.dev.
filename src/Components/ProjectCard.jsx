@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
-  const { title, details, image, liveLink, frontCode, backCode } =
+  const { name, details, image, liveLink, frontCode, backCode } =
     project || {};
 
   return (
@@ -12,7 +12,7 @@ const ProjectCard = ({ project }) => {
       data-aos-easing="ease-out-cubic"
       data-aos-duration="1000"
       data-aos-anchor-placement="center-bottom"
-      className="div-1 relative group border- w-full border border-transparent hover:border-gray-400 h-full  rounded-lg overflow-hidden hover:transform hover:scale-110 duration-500 "
+      className="div-1 relative group max-h[40vh] border w-full border-transparent hover:border-gray-400 h-full  rounded-lg overflow-hidden hover:transform hover:scale-110 duration-500"
     >
       <div>
         <img
@@ -49,7 +49,7 @@ const ProjectCard = ({ project }) => {
       </div>
       <div className="z-10 text-xs bg-[#0f0f0f] bg-opacity-95 w-full h-full flex items-center justify-center absolute bottom-0 invisible group-hover:visible">
         <div className="text-center mb-8 ">
-          <h1 className="text-lg font-semibold text-gray-100 ">{title}</h1>
+          <h1 className="text-lg font-semibold text-gray-100 ">{name}</h1>
           <p className="text-gray-200 px-2 ">{details}</p>
         </div>
       </div>
