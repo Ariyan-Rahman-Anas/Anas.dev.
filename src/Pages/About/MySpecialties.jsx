@@ -23,8 +23,8 @@ const MySpecialties = () => {
             specialties.map(({ title, description }, index) => (
               <div key={index} className="fle items-center justify-items-center section-grant-left rounded-lg p-4 space-y-4 md:h-fit w-full md:w-3/5">
                 <div className="w-fit relative ">
-                  <h1 className="text-6xl font-semibold">{title}</h1>
-                  <BiPlus size={30} className="absolute top-2 -right-6 font-bold " />
+                  <h1 className="text-4xl md:text-5xl font-semibold">{title}</h1>
+                  <BiPlus className="absolute top-2 -right-4 md:-right-5 text-xl md:text-2xl font-bold " />
                 </div>
                 <p className="text-gray-400 font-semibold ">{description}</p>
               </div>

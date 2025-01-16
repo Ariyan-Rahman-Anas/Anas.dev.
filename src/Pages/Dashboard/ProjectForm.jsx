@@ -70,10 +70,10 @@ const ProjectForm = () => {
                         required
                         name="category"
                         onChange={((e)=>setCategory(e.target.value))}
-                        className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 mb-3 border-transparent focus:border-b-teal-600"
+                        className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 mb-3 border-transparent focus:border-b-teal-600"
                     >
                         <option value="">Select Category</option>
-                        <option value="Non-Functional">Non-Functional</option>
+                        <option value="Static">Static</option>
                         <option value="Front-End">Front-End</option>
                         <option value="Full-Stack">Full-Stack</option>
                     </select>
@@ -83,14 +83,14 @@ const ProjectForm = () => {
                             type="text"
                             required
                             placeholder="name"
-                            className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                         <input
                             name="details"
                             required
                             placeholder="Details"
                             type="text"
-                            className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                     </div>
                     <div className="flex flex-col md:flex-row gap-3 mb-3">
@@ -99,13 +99,13 @@ const ProjectForm = () => {
                             type="text"
                             required
                             placeholder="Frontend technologies separated by comma"
-                            className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                         <input
                             name="backTech"
                             placeholder="Backend technologies separated by comma"
                             type="text"
-                            className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                     </div>
                     <div className="flex flex-col md:flex-row gap-3 mb-3">
@@ -114,13 +114,13 @@ const ProjectForm = () => {
                             required
                             placeholder="Front-End code base link:"
                             type="text"
-                            className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                         <input
                             name="backCode"
                             placeholder="Back-End code base link:"
                             type="text"
-                            className="w-full p-2 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-lg text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                     </div>
                     <div className="flex flex-col md:flex-row gap-3 mb-3">
@@ -129,13 +129,13 @@ const ProjectForm = () => {
                             required
                             placeholder="Live Link:"
                             type="text"
-                            className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                         <input
                             name="image"
                             required
                             type="file"
-                            className="w-full p-2 rounded-md bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
+                            className="w-full p-2 rounded-md text-gray-200 bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
                         />
                     </div>
                     <div className="aside flex items-center gap-3 mb-3">

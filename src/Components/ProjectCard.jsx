@@ -103,8 +103,8 @@ const ProjectCard = ({ project }) => {
 
       <div className="z-10 bg-[#0f0f0f] bg-opacity-95 w-full h-full flex items-center justify-center absolute bottom-0 invisible group-hover:visible">
         <div className="text-center px-2 ">
-          <h1 className="text-lg font-semibold text-gray-100 ">{name}</h1>
-          <p className="text-gray-200 px-2 ">{details}</p>
+          <h1 className="text-2xl font-semibold text-gray-200 ">{name}</h1>
+          <p className="text-gray-400 px-2 ">{details}</p>
         </div>
       </div>
     </div>

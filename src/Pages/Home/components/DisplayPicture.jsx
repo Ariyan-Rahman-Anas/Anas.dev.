@@ -12,7 +12,7 @@ export default function DisplayPicture() {
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
             data-aos-anchor-placement="center-bottom"
-            className="grid grid-cols-1 md:grid-cols-12 gap-4 "
+            className="grid grid-cols-1 md:grid-cols-12 gap-4"
         >
             {/* <div className=""> */}
             <div className="col-span-12 md:col-span-5 mt-6 flex flex-col md:flex-row items-center justify-start gap-4" >

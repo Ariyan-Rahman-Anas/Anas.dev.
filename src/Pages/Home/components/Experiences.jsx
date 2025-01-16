@@ -33,7 +33,7 @@ export default function Experiences() {
                     {/* <h1 className="text-5xl font-semibold mb-3">{cta} </h1> */}
                     <div className="w-fit relative ">
                         <h1 className="text-4xl md:text-5xl font-semibold">{cta}</h1>
-                        <BiPlus size={30} className="absolute top-2 -right-6 font-bold " />
+                        <BiPlus className="absolute top-2 -right-4 md:-right-5 text-xl md:text-2xl font-bold " />
                     </div>
                     <div className="text-gray-300 font-semibold text-sm text-center ">
                         <p>{title}</p>
