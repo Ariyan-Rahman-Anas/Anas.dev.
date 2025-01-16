@@ -20,12 +20,12 @@ export default function DisplayPicture() {
                     <img
                         src={myDisplayPicture}
                         alt="Ariyan Rahman Anas"
+                        loading="lazy"
                         className="w-full h-full rounded-ee-[17rem] rounded-xl border-primary border-b-[.25rem] border-dashed"
                     />
                 </div>
             </div>
             
-
             <div className="flex-1 col-span-12 md:col-span-7 p-4 md:px-8 flex items-center justify-center">
                 <div className="flex flex-col items-start ">
                     <div className="flex items-end gap-2 font-semibold">
@@ -45,6 +45,7 @@ export default function DisplayPicture() {
                     </Link>
                 </div>
             </div>
+            
            <RoutingIndicator navigateTo={"/about"} />
         </div>
     )
