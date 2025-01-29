@@ -71,7 +71,7 @@ const Credentials = () => {
               </p>
 
               {/* social media and resume btn */}
-              <div className="mdhidden mt-9 flex flex-col md:flex-row items-center justify-between gap-5 ">
+              <div className="mt-9 flex flex-col md:flex-row items-center justify-between gap-5 ">
                 <MySocials
                   fb={<FaFacebookF></FaFacebookF>}
                   linkedin={<FaLinkedinIn></FaLinkedinIn>}
