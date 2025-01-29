@@ -1,70 +1,40 @@
 import PageTitle from "../../Components/PageTitle";
-import { useEffect, useState } from "react";
-import { getData } from "../../Hooks/apiUtils";
+import { useState } from "react";
 import Spinner from "../../Components/Spinner";
 import ProjectCard from "../../Components/ProjectCard";
 import cover from "./../../assets/myCover.jpeg";
 import arrow from "./../../assets/arrow.png";
 import { TbFaceIdError } from "react-icons/tb";
+import { useGetAllCategoriesQuery, useGetAllProjectsQuery } from "../../redux/features/projects/projectsApi";
 
 const Projects = () => {
-  const [categories, setCategories] = useState([]);
-  const [projects, setProjects] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
   const [activeTab, setActiveTab] = useState("Front-End");
 
-  // Fetching all projects
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const responseData = await getData("projects/all");
-        setProjects(responseData?.projects);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchData();
-  }, []);
+  const { data: categoriesData, isLoading: isCategoriesLoading, error:categoryError } = useGetAllCategoriesQuery()
+  const categories = categoriesData?.categories
 
-  // Fetching all categories
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const responseData = await getData("projects/categories");
-        setCategories(responseData?.categories);
-      } catch (error) {
-        setError(error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchData();
-  }, []);
+  const { data: projectsData, isLoading: isProjectsLoading, error:projectError } = useGetAllProjectsQuery()
+  const projects = projectsData?.projects
 
-  if (loading) return <Spinner />;
+  if (isCategoriesLoading || isProjectsLoading) return <Spinner />;
 
   // Filter projects based on the active tab
-  const filteredProjects = projects.filter(
+  const filteredProjects = projects?.filter(
     (project) => project?.category === activeTab
   );
 
   return (
-    <div className="mt-12">
+    <div className="mt-12 space-y-8">
       <section
-        id="media-and-top-info"
+        id="intro-section"
         className="grid grid-cols-1 lg:grid-cols-3 gap-4"
       >
         {/* Cover image */}
         <div
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="center-bottom"
+          // data-aos="zoom-in-up"
+          // data-aos-easing="ease-out-cubic"
+          // data-aos-duration="1000"
+          // data-aos-anchor-placement="center-bottom"
           className="p-4 w-full col-span-2 md:col-span-1 section-grant-left rounded-lg"
         >
           <img
@@ -76,10 +46,10 @@ const Projects = () => {
 
         {/* Basic info */}
         <div
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="center-bottom"
+          // data-aos="zoom-in-up"
+          // data-aos-easing="ease-out-cubic"
+          // data-aos-duration="1000"
+          // data-aos-anchor-placement="center-bottom"
           className="col-span-2 flex flex-col justify-between gap-4"
         >
           <PageTitle title={"ALL-PROJECTS"} />
@@ -98,16 +68,15 @@ const Projects = () => {
       </section>
 
       {
-        categories && projects && <section
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="center-bottom"
-          className="right w-full border2 flex flex-col gap-8"
+        categories && projects && <section id="projects-section"
+          // data-aos="zoom-in-up"
+          // data-aos-easing="ease-out-cubic"
+          // data-aos-duration="1000"
+          // data-aos-anchor-placement="center-bottom"
+          className="w-full flex flex-col gap-8"
         >
-          <div className="w-full mt-10">
             {/* Tab Headers */}
-            <div className="flex borderb border-gray-200 relative">
+            <div className="flex items-center relative">
               {categories?.map((category, idx) => (
                 <button
                   key={idx}
@@ -143,21 +112,20 @@ const Projects = () => {
                 </div>
               ))}
             </div>
-          </div>
         </section>
       }
       
-      {
-        error && <div className="border-2 border-dashed rounded-lg border-gray-500 w-full md:w-fit mx-auto p-4 flex flex-col items-center justify-center ">
-          <TbFaceIdError size={35}  />
-          <h1 className="font-bold text-4xl">Oops!</h1>
-          <p className="mt-4" >Something went wrong while fetching data.</p>
-          <p>Please try again later.</p>
-        </div>
-      }
-
+      <section id="error-section">
+        {
+          (categoryError || projectError) && <div className="border-2 border-dashed rounded-lg border-gray-500 w-full md:w-fit mx-auto p-4 flex flex-col items-center justify-center ">
+            <TbFaceIdError size={35} />
+            <h1 className="font-bold text-2xl">Oops!</h1>
+            <p className="mt-2 text-gray-500">Something went wrong while fetching data.</p>
+            <p>Please try again later.</p>
+          </div>
+        }
+      </section>
     </div>
   );
 };
-
 export default Projects;
