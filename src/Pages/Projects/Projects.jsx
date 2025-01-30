@@ -16,7 +16,9 @@ const Projects = () => {
   const { data: projectsData, isLoading: isProjectsLoading, error:projectError } = useGetAllProjectsQuery()
   const projects = projectsData?.projects
 
-  if (isCategoriesLoading || isProjectsLoading) return <Spinner />;
+  if (isCategoriesLoading || isProjectsLoading) {
+    <Spinner />
+  }
 
   // Filter projects based on the active tab
   const filteredProjects = projects?.filter(
@@ -31,10 +33,10 @@ const Projects = () => {
       >
         {/* Cover image */}
         <div
-          // data-aos="zoom-in-up"
-          // data-aos-easing="ease-out-cubic"
-          // data-aos-duration="1000"
-          // data-aos-anchor-placement="center-bottom"
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom"
           className="p-4 w-full col-span-2 md:col-span-1 section-grant-left rounded-lg"
         >
           <img
@@ -46,10 +48,10 @@ const Projects = () => {
 
         {/* Basic info */}
         <div
-          // data-aos="zoom-in-up"
-          // data-aos-easing="ease-out-cubic"
-          // data-aos-duration="1000"
-          // data-aos-anchor-placement="center-bottom"
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom"
           className="col-span-2 flex flex-col justify-between gap-4"
         >
           <PageTitle title={"ALL-PROJECTS"} />
@@ -69,10 +71,10 @@ const Projects = () => {
 
       {
         categories && projects && <section id="projects-section"
-          // data-aos="zoom-in-up"
-          // data-aos-easing="ease-out-cubic"
-          // data-aos-duration="1000"
-          // data-aos-anchor-placement="center-bottom"
+          data-aos="zoom-in-up"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="1000"
+          data-aos-anchor-placement="center-bottom"
           className="w-full flex flex-col gap-8"
         >
             {/* Tab Headers */}

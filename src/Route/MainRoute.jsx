@@ -1,53 +1,60 @@
+import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../Layout/MainLayout";
-import Home from "../Pages/Home/Home";
-import About from "../Pages/About/About";
-import Projects from "../Pages/Projects/Projects";
-import Contact from "../Pages/Contact/Contact";
-import Credentials from "../Pages/Credentials/Credentials";
-import OfferingServices from "../Pages/Offering Services/OfferingServices";
-import CredentialsDetails from "../Pages/Credentials/CredentialsDetails";
 import ErrorPage from "../Pages/Error/ErrorPage";
-import Dashboard from "../Pages/Dashboard/Dashboard";
-import BlogsPage from "../Pages/BlogsPage/BlogsPage";
+import Spinner from "../Components/Spinner";
+
+const MainLayout = lazy(() => import("./../Layout/MainLayout"))
+const Home = lazy(()=>import("./../Pages/Home/Home"))
+const About = lazy(()=>import("./../Pages/About/About"))
+const Projects = lazy(()=>import("./../Pages/Projects/Projects"))
+const Contact = lazy(()=>import("./../Pages/Contact/Contact"))
+const Credentials = lazy(() => import("./../Pages/Credentials/Credentials"))
+const CredentialsDetails = lazy(() => import("./../Pages/Credentials/CredentialsDetails"))
+const OfferingServices = lazy(() => import("./../Pages/Offering Services/OfferingServices"))
+const BlogsPage = lazy(() => import("./../Pages/BlogsPage/BlogsPage"))
+
+const Dashboard = lazy(() => import("./../Pages/Dashboard/Dashboard"))
 
 const MainRoute = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout></MainLayout>,
+    element: <Suspense fallback={<Spinner />} >
+      <MainLayout />
+    </Suspense>,
+    // element: <MainLayout></MainLayout>,
     errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <Home />,
       },
       {
         path: "about",
-        element: <About></About>,
+        element: <About/> ,
       },
       {
         path: "credentials",
-        element: <Credentials></Credentials>,
+        element: <Credentials /> 
       },
       {
         path: "credentialDetails/:id",
-        element: <CredentialsDetails></CredentialsDetails>,
+        element: <CredentialsDetails /> ,
       },
       {
         path: "projects",
-        element: <Projects></Projects>,
+        element: <Projects />,
       },
       {
-        path: "offeringServices",
-        element: <OfferingServices></OfferingServices>,
+        path: "offering-services",
+        element: <OfferingServices />,
       },
       {
         path: "blogs",
-        element: <BlogsPage></BlogsPage>,
+        element: <BlogsPage />,
       },
       {
         path: "contact",
-        element: <Contact></Contact>,
+        element: <Contact />,
       },
       {
         path: "dashboard",

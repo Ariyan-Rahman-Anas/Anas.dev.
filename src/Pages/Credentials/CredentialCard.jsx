@@ -12,7 +12,7 @@ const CredentialCard = ({ credential }) => {
           src={image}
           alt={`${degreeTitle}'image`}
           loading="lazy"
-          className="rounded-lg w-full group-hover:scale-125 duration-500  "
+          className="rounded-lg w-full h-full group-hover:scale-125 duration-500  "
         />
         <div className="hidden absolute top-0 bg-black rounded-lg w-full h-full group-hover:flex items-center justify-center bg-opacity-60 duration-500  ">
           <Link

@@ -6,7 +6,7 @@ import { TbArrowLoopRight } from "react-icons/tb";
 
 export default function Services() {
     return (
-        <Link to={"offeringServices"}
+        <Link to={"offering-services"}
             data-aos="zoom-in-up"
             data-aos-easing="ease-out-cubic"
             data-aos-duration="1000"
@@ -27,7 +27,7 @@ export default function Services() {
             </div>
             <div className="absolute right-5 bottom-5 ">
                 <Link
-                    to={"offeringServices"}
+                    to={"offering-services"}
                     className="text-gray-500 group-hover:text-gray-100 duration-500 text-2xl "
                 >
                     <TbArrowLoopRight></TbArrowLoopRight>

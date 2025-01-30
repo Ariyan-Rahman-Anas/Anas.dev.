@@ -1,7 +1,6 @@
 import { CgWebsite } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 const ProjectCard = ({ project }) => {
   const { name, details, image, liveLink, frontCode, backCode, frontTech, backTech } =
     project || {};
@@ -97,9 +96,6 @@ const ProjectCard = ({ project }) => {
           }
         </div>
       </div>
-
-
-
 
       <div className="z-10 bg-[#0f0f0f] bg-opacity-95 w-full h-full flex items-center justify-center absolute bottom-0 invisible group-hover:visible">
         <div className="text-center px-2 ">
