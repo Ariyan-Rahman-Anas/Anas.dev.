@@ -2,7 +2,6 @@ import { lazy, Suspense } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../Pages/Error/ErrorPage";
 import Spinner from "../Components/Spinner";
-
 const MainLayout = lazy(() => import("./../Layout/MainLayout"))
 const Home = lazy(()=>import("./../Pages/Home/Home"))
 const About = lazy(()=>import("./../Pages/About/About"))

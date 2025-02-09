@@ -7,16 +7,9 @@ export default function DisplayPicture() {
     const resume = import.meta.env.VITE_RESUME
 
     return (
-        <div
-            data-aos="zoom-in-up"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="1000"
-            data-aos-anchor-placement="center-bottom"
-            className="grid grid-cols-1 md:grid-cols-12 gap-4"
-        >
-            {/* <div className=""> */}
-            <div className="col-span-12 md:col-span-5 mt-6 flex flex-col md:flex-row items-center justify-start gap-4" >
-                <div className="img w-full md:w-[25rem] rounded-se-full mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-4 border2  ">
+            <div className="col-span-12 md:col-span-5 mt-5 md:mt-0 flex flex-col md:flex-row items-center justify-start gap-4 border2 " >
+                <div className="img w-full md:w-[70%] rounded-se-full mx-auto">
                     <img
                         src={myDisplayPicture}
                         alt="Ariyan Rahman Anas"
@@ -26,7 +19,7 @@ export default function DisplayPicture() {
                 </div>
             </div>
             
-            <div className="flex-1 col-span-12 md:col-span-7 p-4 md:px-8 flex items-center justify-center">
+            <div className="border- col-span-12 md:col-span-7 p-4 md:px-8 flex items-center justify-center">
                 <div className="flex flex-col items-start ">
                     <div className="flex items-end gap-2 font-semibold">
                         <h2 className="md:text-xl">Hello, {`I'm`}</h2>
@@ -38,7 +31,7 @@ export default function DisplayPicture() {
                     <Link
                         to={resume}
                         target="_blank"
-                        className="w-fit flex items-center justify-between gap-2 rounded-md hover:transform hover:scale-105 duration-500 btn"
+                        className="flex items-center justify-between gap-2 btn"
                     >
                         Download My Resume
                         <LuFileDown></LuFileDown>
@@ -46,7 +39,7 @@ export default function DisplayPicture() {
                 </div>
             </div>
             
-           <RoutingIndicator navigateTo={"/about"} />
+           {/* <RoutingIndicator navigateTo={"/about"} /> */}
         </div>
     )
 }

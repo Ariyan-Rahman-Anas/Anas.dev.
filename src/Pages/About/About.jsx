@@ -9,6 +9,7 @@ import DownloadMyResume from "../../Components/DownloadMyResume";
 import MySkills from "./MySkills";
 import EduWithPersonaInfo from "./EduWithPersonaInfo";
 import MySpecialties from "./MySpecialties";
+import Experiences from "./Experiences";
 
 const About = () => {
 
@@ -65,6 +66,10 @@ const About = () => {
 
       {/* personal details section  */}
       <EduWithPersonaInfo />
+
+      {/* experience section */}
+      <Experiences />
+    
 
       {/* skills section */}
       <MySkills />

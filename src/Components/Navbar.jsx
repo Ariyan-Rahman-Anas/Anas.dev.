@@ -5,9 +5,6 @@ import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { TbCertificate } from "react-icons/tb";
 import { IoBriefcaseOutline } from "react-icons/io5";
 
-
-
-
 const Navbar = () => {
   const navItems = [
     { title: "Home", link: "", icon: <AiOutlineHome /> },
@@ -18,14 +15,14 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="sticky top-0 z-[1000]">
-      <nav className="flex items-center justify-between text-gray-500 bg-gray-950 py-3">
+    <div className="sticky top-0 z-[1000] px-2 md:px-4 lg:px-8 bg-teal-950 ">
+      <nav className="flex items-center justify-between text-gray-500 bggray-950 py-3">
         <Link
           to="/"
           id="nav-left"
-          className="bg-gradient-to-r from-white via-teal-500 to-teal-600 text-transparent bg-clip-text group-hover:from-primary group-hover:via-primary group-hover:to-primary duration-1000 animate-bounce "
+          className="bg-gradient-to-r from-white via-teal-500 to-teal-600 text-transparent bg-clip-text group-hover:from-primary group-hover:via-primary group-hover:to-primary duration-1000"
         >
-          <h1 className="font-bruno text-3xl font-bold">Anas</h1>
+          <h1 className="text-3xl font-bold">{`<Anas/>.`}<span className="text-base">dev.</span> </h1>
         </Link>
 
         <ul
@@ -33,7 +30,7 @@ const Navbar = () => {
           className={`bg-gray-800 border border-primary md:border-none md:bg-transparent rounded-full w-[95%] mx-auto md:w-fit flex items-center justify-around md:justify-center py-2 gap-x-8 fixed bottom-[0.08rem] left-0 right-0 md:static duration-700 z-10`}
         >
           {navItems.map(({ title, icon, link }, index) => (
-            <li key={index} className="text-black md:text-white group">
+            <li key={index} className="text-black md:text-white text-sm group">
               <NavLink
                 to={`/${link}`}
                 className={({ isActive }) =>
@@ -52,7 +49,7 @@ const Navbar = () => {
         <Link
           id="nav-right"
           to="/contact"
-          className="btn rounded-md text-gray-200 flex duration-500"
+          className="btn"
         >
           {`Let's talk`}
         </Link>
