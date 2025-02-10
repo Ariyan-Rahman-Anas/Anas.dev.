@@ -121,6 +121,13 @@ body {
   font-style: italic;
 }
 
+
+
+.heading{
+  @apply font-semibold text-3xl text-white text-center
+}
+
+
 .section-grant-left{
   @apply bg-gradient-to-r from-teal-900 to-gray-900 hover:to-gray-800
 }

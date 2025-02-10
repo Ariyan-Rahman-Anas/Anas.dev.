@@ -14,49 +14,28 @@ import Experiences from "./Experiences";
 const About = () => {
 
   return (
-    <div className="space-y-14 md:space-y-24" >
+    <div className="space-y-14 md:space-y-24 text-gray-400 w-[95%] md:w-[90%] mx-auto" >
       {/* top section starts from here */}
       <section
         id="media-and-top-info"
-        className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-4"
+        className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-4  "
       >
         {/* cover img */}
         <div
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="center-bottom"
-          className="p-4 w-full col-span-2 md:col-span-1 section-grant-left rounded-lg"
-        >
+          className="p-4 w-full col-span-2 md:col-span-1 rounded-lg bg-gradient-to-tl from-teal-950 to-white ">
           <img src={cover} alt="Ariyan Rahman Anas" loading="lazy" className="w-full h-full rounded-lg" />
         </div>
 
         {/* basic info */}
         <div
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="center-bottom"
-          className="col-span-2 flex flex-col justify-between gap-4  "
+          className="col-span-2 flex flex-col justify-between gap-4 "
         >
           <PageTitle title={"SELF-SUMMARY"}></PageTitle>
           <div className="down px-8 pb-4 section-grant-left duration-500 rounded-lg">
             <img src={arrow} alt="name indicator" />
-            <h1 className="text-4xl font-semibold mt-5">Ariyan Rahman Anas</h1>
-            <p className="mt-3 text-gray-300">
+            <p className="mt-3 text-base ">
               I am a Bangladesh-based Full Stack Developer. I have a diverse range of experience having worked across various fields and industries.
             </p>
-
-            {/* social media and resume btn */}
-            <div className="md:hidden mt-12 flex flex-col md:flex-row items-center justify-between gap-5 ">
-              <MySocials
-                fb={<FaFacebookF></FaFacebookF>}
-                linkedin={<FaLinkedinIn></FaLinkedinIn>}
-                gh={<LuGithub></LuGithub>}
-              ></MySocials>
-
-              <DownloadMyResume />
-            </div>
           </div>
         </div>
       </section>
@@ -64,11 +43,11 @@ const About = () => {
     {/* video intro and specialties section */}
       <MySpecialties />
 
-      {/* personal details section  */}
-      <EduWithPersonaInfo />
-
       {/* experience section */}
       <Experiences />
+
+      {/* personal details section  */}
+      <EduWithPersonaInfo />
     
 
       {/* skills section */}
