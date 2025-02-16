@@ -47,8 +47,7 @@ const About = () => {
       <Experiences />
 
       {/* personal details section  */}
-      <EduWithPersonaInfo />
-    
+      <EduWithPersonaInfo />    
 
       {/* skills section */}
       <MySkills />

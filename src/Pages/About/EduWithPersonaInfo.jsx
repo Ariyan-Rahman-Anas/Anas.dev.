@@ -1,16 +1,7 @@
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa"
-import MySocials from "../../Components/MySocials"
-import { LuGithub } from "react-icons/lu"
-import DownloadMyResume from "../../Components/DownloadMyResume"
-
 const EduWithPersonaInfo = () => {
   return (
       <section className="my-4 grid grid-cols-1 lg:grid-cols-2 gap-10 text-gray-200">
           <div
-              data-aos="zoom-in-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
               className="section-grant-left text-sm p-4 space-y-4 rounded-lg"
           >
               {/* personal information */}
@@ -65,26 +56,10 @@ const EduWithPersonaInfo = () => {
                       </div>
                   </div>
               </div>
-
-              {/* basic info again here for medium to large devices */}
-              <div className="social-icons-resume-download hidden mt-0 md:mt12 mb12 md:flex flex-col md:flex-row items-center justify-between gap-5 ">
-                  {/* <MySocials></MySocials> */}
-                  <MySocials
-                      fb={<FaFacebookF />}
-                      linkedin={<FaLinkedinIn />}
-                      gh={<LuGithub />}
-                  ></MySocials>
-
-                  <DownloadMyResume />
-              </div>
           </div>
 
           {/* educational information */}
           <div
-              data-aos="zoom-in-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
               className="section-grant-left text-sm p-4 space-y-4 rounded-lg"
           >
               <h1 className="text-3xl font-semibold">

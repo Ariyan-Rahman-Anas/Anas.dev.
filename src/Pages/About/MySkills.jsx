@@ -103,10 +103,6 @@ const MySkills = () => {
                 {
                     skills?.map((item, index) => <div
                         key={index}
-                        data-aos="zoom-in-up"
-                        data-aos-easing="ease-out-cubic"
-                        data-aos-duration="1000"
-                        data-aos-anchor-placement="center-bottom"
                         className="aos-init aos-animate py-4 " >
                         <h1>
                             {item.icon}

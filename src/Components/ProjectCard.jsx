@@ -7,10 +7,6 @@ const ProjectCard = ({ project }) => {
 
   return (
     <div
-      data-aos="zoom-in-up"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="1000"
-      data-aos-anchor-placement="center-bottom"
       className="relative group border-2 w-full section-grant-left border-transparent hover:border-gray-200 h-full rounded-lg overflow-hidden hover:transform hover:scale-110 duration-500 pb-16 "
     >
       <div className="overflow-hidden">
