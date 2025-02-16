@@ -1,13 +1,23 @@
 import { BiPlus } from "react-icons/bi"
+import { useGetSpecalitiesQuery } from "../../redux/features/specalities/specalitiesApi"
+import Spinner from './../../Components/Spinner';
 
 const MySpecialties = () => {
 
+  const { data, isLoading } = useGetSpecalitiesQuery()
+  const { yearsOfExperience,
+    completedProjects,
+    workedCountries,
+    clients } = data?.specalities[0] || {}
+  
   const specialties = [
-    { title: 2, description: "Years of Experience" },
-    { title: 85, description: "Completed Projects" },
-    { title: 5, description: "Countries I worked already" },
-    { title: 7, description: "Clients I have worked already" },
+    { title: yearsOfExperience, description: "Years of Experience" },
+    { title: completedProjects, description: "Completed Projects" },
+    { title: workedCountries, description: "Countries I worked already" },
+    { title: clients, description: "Clients I have worked already" },
   ]
+
+  if(isLoading) <Spinner />
 
   return (
     <div className="text-center space-y-5 border2">

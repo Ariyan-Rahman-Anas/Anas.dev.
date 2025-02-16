@@ -2,9 +2,15 @@ import { Link } from "react-router-dom";
 import { LuFileDown } from "react-icons/lu";
 import myDisplayPicture from "../../../assets/me.png"
 import RoutingIndicator from "./RoutingIndicator";
+import { useGetSpecalitiesQuery } from "../../../redux/features/specalities/specalitiesApi";
+import Spinner from "../../../Components/Spinner";
 
 export default function DisplayPicture() {
     const resume = import.meta.env.VITE_RESUME
+    const { data, isLoading } = useGetSpecalitiesQuery()
+    const { yearsOfExperience} = data?.specalities[0] || {}
+    
+    if (isLoading) <Spinner />
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-12 gap-4 border2  ">
@@ -27,7 +33,7 @@ export default function DisplayPicture() {
                     </div>
                     <span className="text-primary text-2xl font-semibold lg:hidden"> Ariyan Rahman Anas</span>
                     <h2 className="text-3xl md:text-5xl font-bold mt-4 text-gray-200 ">A Full Stack Developer.</h2>
-                    <p className="text-s leading-7 tracking-wide my-5 ">Experienced full stack developer with 1.8+ years of expertise in building pixel-perfect, responsive web applications using modern technologies. Proficient in both frontend and backend development, including creating serverless full stack solutions with Next.js. Fluent in English, quick to respond, a team person and committed to delivering projects on time.</p>
+                    <p className="text-s leading-7 tracking-wide my-5 ">Experienced full stack developer with {yearsOfExperience}+ years of expertise in building pixel-perfect, responsive web applications using modern technologies. Proficient in both frontend and backend development, including creating serverless full stack solutions with Next.js. Fluent in English, quick to respond, a team person and committed to delivering projects on time.</p>
                     <Link
                         to={resume}
                         target="_blank"
