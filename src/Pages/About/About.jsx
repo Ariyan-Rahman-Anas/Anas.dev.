@@ -43,11 +43,11 @@ const About = () => {
     {/* video intro and specialties section */}
       <MySpecialties />
 
+      {/* personal details section  */}
+      <EduWithPersonaInfo />   
+    
       {/* experience section */}
       <Experiences />
-
-      {/* personal details section  */}
-      <EduWithPersonaInfo />    
 
       {/* skills section */}
       <MySkills />

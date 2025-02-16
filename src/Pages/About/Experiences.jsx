@@ -43,7 +43,7 @@ const Experiences = () => {
     <div className="relative space-y-8">
       <div className="my-4 space-y-2">
         <h1 className="heading">Experiences</h1>
-        <p className="text-center">{`Take a look at my professional journey, showcasing key achievements and the impact I've made`}</p>
+        <p className="text-center font-medium ">{`Take a look at my professional journey, showcasing key achievements and the impact I've made`}</p>
       </div>
 
       <div className="flex w-full justify-center">
