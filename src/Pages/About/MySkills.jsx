@@ -107,7 +107,7 @@ const MySkills = () => {
     return (
         <section
             id="skills"
-            className="p-4 text-gray-200 rounded-lg text-center space-y-8"
+            className="p-4 text-gray-200 rounded-lg text-center space-y-8 "
         >
             <div className="my-4 space-y-2">
                 {/* <h1 className="heading">⚔️ Weapons ⚔️</h1> */}

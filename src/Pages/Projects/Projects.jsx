@@ -26,10 +26,10 @@ const Projects = () => {
   );
 
   return (
-    <div className="mt-12 space-y-8">
+    <div className="mt-12 space-y-8 w-[95%] md:w-[90%] mx-auto">
       <section
         id="intro-section"
-        className="grid grid-cols-1 lg:grid-cols-3 gap-4"
+        className="grid grid-cols-1 lg:grid-cols-3 gap-4 "
       >
         {/* Cover image */}
         <div
@@ -49,10 +49,7 @@ const Projects = () => {
           <PageTitle title={"ALL-PROJECTS"} />
           <div className="down px-8 pb-4 section-grant-left duration-500 rounded-lg">
             <img src={arrow} alt="name indicator" />
-            <h1 className="text-4xl font-semibold mt-5">
-              Ariyan Rahman Anas
-            </h1>
-            <p className="mt-3 text-gray-300">
+            <p className="mt-3 text-gray-400">
               I am a Bangladesh-based Full Stack Developer. I have a diverse
               range of experience having worked across various fields and
               industries.
@@ -92,7 +89,7 @@ const Projects = () => {
             </div>
 
             {/* Tab Content */}
-            <div className="relative mt-4 minh-screen grid grid-cols-1 md:grid-cols-3 gap-4 ">
+            <div className="relative mt-4 grid grid-cols-1 md:grid-cols-3 gap-6 ">
               {filteredProjects.map((project) => (
                 <div
                   key={project?._id}
