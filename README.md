@@ -1,6 +1,6 @@
 # My Portfolio
 
 Here's the live link:
-https://ariyanrahmananas.netlify.app/
+https://ariyanrahmananas.vercel.app/
 
 # Ariyan Rahman Anas
