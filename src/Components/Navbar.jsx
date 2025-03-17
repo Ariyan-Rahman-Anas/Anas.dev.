@@ -15,7 +15,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="sticky top-0 z-[1000] px-2 md:px-4 lg:px-8 bg-teal-950 ">
+    <div className="sticky top-0 z-[1000] px-2 md:px-4 lg:px-8 bg-teal-950 max-w-[1920px] mx-auto ">
       <nav className="flex items-center justify-between text-gray-500 bggray-950 py-3">
         <Link
           to="/"
@@ -57,5 +57,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;

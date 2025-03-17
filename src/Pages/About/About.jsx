@@ -14,7 +14,7 @@ import Experiences from "./Experiences";
 const About = () => {
 
   return (
-    <div className="space-y-14 md:space-y-24 text-gray-400 w-[95%] md:w-[90%] mx-auto" >
+    <div className="space-y-14 md:space-y-24 text-gray-400 w-[95%] md:w-[90%] mx-auto">
       {/* top section starts from here */}
       <section
         id="media-and-top-info"

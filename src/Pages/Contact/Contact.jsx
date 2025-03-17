@@ -1,7 +1,7 @@
 import { IoMailOutline } from "react-icons/io5";
 import { MdOutlineCall } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import arrow from "./../../assets/arrow.png";
 import emailjs from "@emailjs/browser";
@@ -44,106 +44,87 @@ const Contact = () => {
         }
       );
   };
-  
+
+
+  const socials = [
+    {
+      icon: <LuGithub />,
+      link: "https://github.com/Ariyan-Rahman-Anas",
+    },
+    {
+      icon: <FaFacebookF />,
+      link: "https://www.facebook.com/ariyanrahmananas69/",
+    },
+    {
+      icon: <FaLinkedinIn />,
+      link: "https://www.linkedin.com/in/ariyanrahmananas/",
+    },
+    {
+      icon: <FaWhatsapp />,
+      link: "https://wa.me/+8801610195968",
+    }
+  ]
 
   return (
-    <div className="mt-4">
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
-        <div
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="center-bottom"
-          className="left w-full col-span-3 md:col-span-1 "
-        >
-          <div className="flex flex-col items-start w-full h-full justify-between gap-4 ">
-            <div className="space-y-6 section-grant-left w-full p-4 rounded-lg ">
-              <h1 className="text-3xl font-semibold text-gray-200 ">
-                Contact Info
-              </h1>
-              <div className="flex flex-col gap-4 w-full   ">
-                <div
-                  data-aos="zoom-in-up"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="1000"
-                  data-aos-anchor-placement="center-bottom"
-                  className="mail flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-500 "
-                >
-                  <div className="text-3xl px-5 py-3 section-grant-right rounded-l-lg">
-                    <IoMailOutline></IoMailOutline>
-                  </div>
-                  <div>
-                    <a href="mailto:anas.hllw@gmail.com" >anas.hllw@gmail.com</a>
-                  </div>
+    <div className="flex items-center justify-center h-full min-h-[60vh] ">
+      <div className="my-6 text-gray-400 w-[95%] md:w-[90%] mx-auto fle items-start justify-between grid grid-cols-1 md:grid-cols-2 gap-8 ">
+        <section className="w-full h-full section-grant-left rounded-lg flex-1 flex flex-col items-start justify-between gap-4 space-y-4 p-4">
+          <div className="space-y-6 w-full ">
+            <h1 style={{ textAlign: "left" }} className="heading">
+              Contact Info
+            </h1>
+            <div className="flex flex-col gap-4 w-full   ">
+              <a href="mailto:anas.hllw@gmail.com" className="mail flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-300 ">
+                <div className="text-3xl px-5 py-2 section-grant-right rounded-l-lg">
+                  <IoMailOutline></IoMailOutline>
                 </div>
-                <div
-                  data-aos="zoom-in-up"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="1000"
-                  data-aos-anchor-placement="center-bottom"
-                  className="number flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-500 "
-                >
-                  <div className="text-3xl px-5 py-3 section-grant-right rounded-l-lg">
-                    <MdOutlineCall></MdOutlineCall>
-                  </div>
-                  <div>
-                    <a href="tel:+8801610195968" >+88 01610-195968</a>
-                  </div>
+                <span>anas.hllw@gmail.com</span>
+              </a>
+              <a href="tel:+8801610195968" className="number flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-300 ">
+                <div className="text-3xl px-5 py-2 section-grant-right rounded-l-lg">
+                  <MdOutlineCall></MdOutlineCall>
                 </div>
-                <div
-                  data-aos="zoom-in-up"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="1000"
-                  data-aos-anchor-placement="center-bottom"
-                  className="location flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-500"
-                >
-                  <div className="text-3xl px-5 py-3 section-grant-right rounded-l-lg">
-                    <IoLocationOutline></IoLocationOutline>
-                  </div>
-                  <div>
-                    <p>Khulshi, Chattogram, Bangladesh</p>
-                  </div>
+                <div>
+                  <span>+88 01610-195968</span>
                 </div>
-              </div>
-              </div>
-            <div className="space-y-6 section-grant-left w-full p-4 rounded-lg ">
-              <h1 className="text-3xl font-semibold text-gray-200 ">
-                Social Info
-              </h1>
-              <div
-                data-aos="zoom-in-up"
-                data-aos-easing="ease-out-cubic"
-                data-aos-duration="1000"
-                data-aos-anchor-placement="center-bottom"
-                className="social"
-              >
-                <MySocials
-                  fb={<FaFacebookF></FaFacebookF>}
-                  linkedin={<FaLinkedinIn></FaLinkedinIn>}
-                  gh={<LuGithub></LuGithub>}
-                ></MySocials>
+              </a>
+              <div className="location flex items-center gap-2 shadow hover:shadow-primary rounded-lg duration-300">
+                <div className="text-3xl px-5 py-2 section-grant-right rounded-l-lg">
+                  <IoLocationOutline></IoLocationOutline>
+                </div>
+                <div>
+                  <p>Khulshi, Chattogram, Bangladesh</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div
-          data-aos="zoom-in-up"
-          data-aos-easing="ease-out-cubic"
-          data-aos-duration="1000"
-          data-aos-anchor-placement="center-bottom"
-          className="right relative col-span-3 md:col-span-2 p-5 section-grant-left rounded-lg"
-        >
-          <div className="absolute right-5 top-0 ">
-            <img src={arrow} alt="" />
+          <div className="social w-full ">
+            <MySocials
+              socialsArr={socials}
+              fb={<FaFacebookF></FaFacebookF>}
+              linkedin={<FaLinkedinIn></FaLinkedinIn>}
+              gh={<LuGithub></LuGithub>}
+            ></MySocials>
           </div>
-          <h1 className="text-5xl ">
+        </section>
+
+        <section className="relative flex-1 p-4 section-grant-left rounded-lg">
+          <div className="absolute right-5 top-0 h-14 ">
+            <img
+              src={arrow}
+              alt="down-arrow"
+              loading="lazy"
+              className="w-full h-full"
+            />
+          </div>
+          <h1 style={{ textAlign: "left" }} className="heading ">
             {`Let's Work`} <span className="text-teal-500  ">Together.</span>{" "}
           </h1>
           <div className="contact-form">
             <form
               onSubmit={sendEmail}
               ref={form}
-              className="flex flex-col gap-4 w-full mt-14 "
+              className="flex flex-col gap-4 w-full mt-6 "
             >
               <input
                 type="text"
@@ -151,8 +132,8 @@ const Contact = () => {
                 name="from_name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
-                placeholder="Name *"
+                className="text-input"
+                placeholder="Name*"
               />
 
               <input
@@ -161,8 +142,8 @@ const Contact = () => {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
-                placeholder="Email *"
+                className="text-input"
+                placeholder="Email*"
               />
 
               <input
@@ -171,30 +152,26 @@ const Contact = () => {
                 name="subject"
                 value={subject}
                 onChange={(e) => setSubject(e.target.value)}
-                className="p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600 "
-                placeholder="Your Subject *"
+                className="text-input"
+                placeholder="Your Subject*"
               />
 
               <textarea
                 name="message"
-                placeholder="Your Message *"
+                placeholder="Your Message*"
                 required
                 cols="30"
                 rows="4"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                className="w-full p-3 rounded-lg bg-gray-600 focus:bg-gray-700 focus:outline-none border-b-4 border-transparent focus:border-b-teal-600"
+                className="text-input"
               ></textarea>
 
-              <input
-                type="submit"
-                value="Send Message"
-                className="w-full p-3 rounded-lg bg-gradient-to-l from-teal-700 to-gray-900 hover:to-gray-700 focus:outline-none cursor-pointer "
-              />
+              <input type="submit" value="Send Message" className="btn" />
             </form>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
   );
 };
