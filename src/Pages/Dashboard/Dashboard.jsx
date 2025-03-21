@@ -66,29 +66,21 @@ const Dashboard = () => {
 
 
   return (
-    <div className="min-h-screen bg-black ">
+    <div className="min-h-screen my-6 text-gray-400 w-[95%] md:w-[90%] mx-auto  ">
       <AdminModal show={showModal} onClose={handleCloseModal} />
       {!showModal && (
         <div>
           <section
             id="media-and-top-info"
-            className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 lg:grid-cols-3 gap-8"
           >
             <div
-              data-aos="zoom-in-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
               className="left p-6 w-full col-span-2 md:col-span-1 bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg "
             >
               <img src={cover} alt="" className="rounded-lg" />
             </div>
 
             <div
-              data-aos="zoom-in-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
               className="right col-span-2 flex flex-col gap-5  "
             >
               <PageTitle title={"Admin Dashboard"} />
@@ -103,16 +95,6 @@ const Dashboard = () => {
                   having worked across various fields and industries.
                 </p>
 
-                {/* social media and resume btn */}
-                <div className="mt-12 flex flex-col md:flex-row items-center justify-between gap-5 ">
-                  <MySocials
-                    fb={<FaFacebookF></FaFacebookF>}
-                    linkedin={<FaLinkedinIn></FaLinkedinIn>}
-                    gh={<LuGithub></LuGithub>}
-                  ></MySocials>
-
-                  <DownloadMyResume />
-                </div>
               </div>
             </div>
           </section>
@@ -121,10 +103,6 @@ const Dashboard = () => {
           <section className="my-10 flex flex-col  gap-8 text-gray-500">
             {/* credential section is starts form here */}
             <div
-              data-aos="zoom-in-up"
-              data-aos-easing="ease-out-cubic"
-              data-aos-duration="1000"
-              data-aos-anchor-placement="center-bottom"
               className="left flex-1 p-2 md:p-6  bg-gradient-to-r from-teal-950 to-gray-950 hover:to-gray-900 duration-500 rounded-lg"
             >
               <h1 className="text-3xl font-semibold mb-5 ">Add a Credential</h1>

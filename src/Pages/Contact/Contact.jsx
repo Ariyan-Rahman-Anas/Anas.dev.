@@ -45,7 +45,6 @@ const Contact = () => {
       );
   };
 
-
   const socials = [
     {
       icon: <LuGithub />,
@@ -67,7 +66,7 @@ const Contact = () => {
 
   return (
     <div className="flex items-center justify-center h-full min-h-[60vh] ">
-      <div className="my-6 text-gray-400 w-[95%] md:w-[90%] mx-auto fle items-start justify-between grid grid-cols-1 md:grid-cols-2 gap-8 ">
+      <div className="my-6 text-gray-400 w-[95%] md:w-[90%] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 ">
         <section className="w-full h-full section-grant-left rounded-lg flex-1 flex flex-col items-start justify-between gap-4 space-y-4 p-4">
           <div className="space-y-6 w-full ">
             <h1 style={{ textAlign: "left" }} className="heading">

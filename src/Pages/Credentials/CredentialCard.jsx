@@ -18,7 +18,7 @@ const CredentialCard = ({ credential }) => {
           <Link
             state={{ credential }}
             to={`/credentialDetails/${_id}`}
-            className="py-2 px-5 text-xl text-gray-100 section-grant-left rounded-md flex flex-col items-center justify-center"
+            className="btn"
           >
             Details
           </Link>
