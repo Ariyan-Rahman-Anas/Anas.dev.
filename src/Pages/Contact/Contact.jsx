@@ -108,7 +108,7 @@ const Contact = () => {
         </section>
 
         <section className="relative flex-1 p-4 section-grant-left rounded-lg">
-          <div className="absolute right-5 top-0 h-14 ">
+          <div className="hidden md:block absolute right-5 top-0 h-14">
             <img
               src={arrow}
               alt="down-arrow"

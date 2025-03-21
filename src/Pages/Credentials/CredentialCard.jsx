@@ -17,7 +17,7 @@ const CredentialCard = ({ credential }) => {
         <div className="hidden absolute top-0 bg-black rounded-lg w-full h-full group-hover:flex items-center justify-center bg-opacity-60 duration-500  ">
           <Link
             state={{ credential }}
-            to={`/credentialDetails/${_id}`}
+            to={`/credential-details/${_id}`}
             className="btn"
           >
             Details

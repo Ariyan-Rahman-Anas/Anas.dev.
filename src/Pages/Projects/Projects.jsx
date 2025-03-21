@@ -46,7 +46,7 @@ const Projects = () => {
         <div
           className="col-span-2 flex flex-col justify-between gap-4"
         >
-          <PageTitle title={"ALL-PROJECTS"} />
+          <PageTitle title={"All Projects"} />
           <div className="down px-8 pb-4 section-grant-left duration-500 rounded-lg">
             <img src={arrow} alt="name indicator" />
             <p className="mt-3 text-gray-400">

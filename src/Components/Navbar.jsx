@@ -10,12 +10,12 @@ const Navbar = () => {
     { title: "Home", link: "", icon: <AiOutlineHome /> },
     { title: "About", link: "about", icon: <TiInfoLarge /> },
     { title: "Projects", link: "projects", icon: <IoBriefcaseOutline />},
-    { title: "Credentials", link: "credentials", icon: <TbCertificate /> },
+    { title: "Certificates", link: "credentials", icon: <TbCertificate /> },
     { title: "Contact", link: "contact", icon: <MdOutlinePhoneInTalk /> },
   ];
 
   return (
-    <div className="sticky top-0 z-[1000] px-2 md:px-4 lg:px-8 bg-teal-950 max-w-[1920px] mx-auto ">
+    <div className="sticky top-0 z-[1000] px-2 md:px-4 lg:px-8 md:backdrop-blur-lg max-w-[1920px] mx-auto ">
       <nav className="flex items-center justify-between text-gray-500 bggray-950 py-3">
         <Link
           to="/"
@@ -48,10 +48,9 @@ const Navbar = () => {
 
         <Link
           id="nav-right"
-          to="/contact"
+          to="/offering-services"
           className="btn"
-        >
-          {`Let's talk`}
+        >Services
         </Link>
       </nav>
     </div>

@@ -3,10 +3,10 @@ import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "../Pages/Error/ErrorPage";
 import Spinner from "../Components/Spinner";
 const MainLayout = lazy(() => import("./../Layout/MainLayout"))
-const Home = lazy(()=>import("./../Pages/Home/Home"))
-const About = lazy(()=>import("./../Pages/About/About"))
-const Projects = lazy(()=>import("./../Pages/Projects/Projects"))
-const Contact = lazy(()=>import("./../Pages/Contact/Contact"))
+const Home = lazy(() => import("./../Pages/Home/Home"))
+const About = lazy(() => import("./../Pages/About/About"))
+const Projects = lazy(() => import("./../Pages/Projects/Projects"))
+const Contact = lazy(() => import("./../Pages/Contact/Contact"))
 const Credentials = lazy(() => import("./../Pages/Credentials/Credentials"))
 const CredentialsDetails = lazy(() => import("./../Pages/Credentials/CredentialsDetails"))
 const OfferingServices = lazy(() => import("./../Pages/Offering Services/OfferingServices"))
@@ -29,15 +29,15 @@ const MainRoute = createBrowserRouter([
       },
       {
         path: "about",
-        element: <About/> ,
+        element: <About />,
       },
       {
         path: "credentials",
-        element: <Credentials /> 
+        element: <Credentials />
       },
       {
-        path: "credentialDetails/:id",
-        element: <CredentialsDetails /> ,
+        path: "credential-details/:id",
+        element: <CredentialsDetails />,
       },
       {
         path: "projects",

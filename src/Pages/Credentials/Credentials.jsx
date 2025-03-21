@@ -33,7 +33,7 @@ const Credentials = () => {
           <div
             className="right col-span-2 flex flex-col gap-5  "
           >
-            <PageTitle title={"MY-CERTIFICATES"}></PageTitle>
+            <PageTitle title={"Certificates"}></PageTitle>
             <div className="section-grant-left pl-0 duration-500 rounded-lg">
               <div className=" pt-0 p-4 md:p-8 md:pt-0 ">
                 <div className="h-14 w-fit">
