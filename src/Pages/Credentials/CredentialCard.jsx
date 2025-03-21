@@ -24,7 +24,7 @@ const CredentialCard = ({ credential }) => {
           </Link>
         </div>
       </div>
-      <h1 className="font-semibold mt-3 text-xl ">{degreeTitle} </h1>
+      <h1 className="font-semibold mt-3 text-lg text-white">{degreeTitle} </h1>
     </div>
   );
 };

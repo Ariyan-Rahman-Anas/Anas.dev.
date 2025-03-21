@@ -166,7 +166,7 @@ const Contact = () => {
                 className="text-input"
               ></textarea>
 
-              <input type="submit" value="Send Message" className="btn" />
+              <input type="submit" value="Send" className="btn" />
             </form>
           </div>
         </section>
