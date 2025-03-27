@@ -1,24 +1,18 @@
 import cover from "./../../assets/myCover.jpeg";
 import arrow from "./../../assets/arrow.png";
-import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
-import { LuGithub } from "react-icons/lu";
-
 import PageTitle from "../../Components/PageTitle";
-import MySocials from "../../Components/MySocials";
-import DownloadMyResume from "../../Components/DownloadMyResume";
 import MySkills from "./MySkills";
 import EduWithPersonaInfo from "./EduWithPersonaInfo";
 import MySpecialties from "./MySpecialties";
 import Experiences from "./Experiences";
 
 const About = () => {
-
   return (
     <div className="space-y-14 md:space-y-24 text-gray-400 w-[95%] md:w-[90%] mx-auto">
       {/* top section starts from here */}
       <section
         id="media-and-top-info"
-        className="grid mt-16 grid-cols-1 lg:grid-cols-3 gap-4  "
+        className="grid mt-6 grid-cols-1 lg:grid-cols-3 gap-4  "
       >
         {/* cover img */}
         <div

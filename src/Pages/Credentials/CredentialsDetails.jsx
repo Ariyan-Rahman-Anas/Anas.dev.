@@ -17,7 +17,7 @@ const CredentialsDetails = () => {
   } = credential || {};
 
   return (
-    <div className="flex items-start justify-between gap-8 mt-10 md:mt-16 w-[95%] md:w-[90%] mx-auto ">
+    <div className="flex flex-col md:flex-row items-start justify-between gap-8 mt-10 md:mt-16 w-[95%] md:w-[90%] mx-auto ">
       <div
         className="w-full md:w-[35%] section-grant-left p-4 rounded-lg "
       >
