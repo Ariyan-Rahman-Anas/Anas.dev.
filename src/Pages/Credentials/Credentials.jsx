@@ -21,7 +21,7 @@ const Credentials = () => {
           <div className="down px-8 pb-4 section-grant-left duration-500 rounded-lg">
             <img src={arrow} alt="name indicator" />
             <p className="mt-3 text-base ">
-              Showcasing my professional growth through industry-recognized certifications and accomplishments that validate my expertise
+              Showcasing my professional growth through industry-recognized certifications and accomplishments that validate my expertise.
             </p>
           </div>
         </div>
